@@ -13,7 +13,7 @@ const Portfolio3Column = () => {
     return (
         <div className="main-page-wrapper">
             <Helmet>
-                <title>Portfolio 3 Column || Sinco - Data Science & Analytics React Template</title>
+                <title> Solution || Naavi - Find The Path To Your Next Goal</title>
             </Helmet>
             {/* helmet end */}
 

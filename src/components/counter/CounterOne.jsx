@@ -6,9 +6,9 @@ const CounterOne = () => {
         <Fragment>
             <div className="counter-section-one mt-140 lg-mt-100">
                 <div className="container">
-                    <div className="inner-container bg-color">
+                    {/* <div className="inner-container bg-color">
                         <CommonCounter />
-                    </div> {/* /.inner-container */}
+                    </div>  */}
                 </div>
             </div> {/* /.counter-section-one */}
         </Fragment>

@@ -3,10 +3,8 @@ import {Helmet} from 'react-helmet';
 import BrandFive from '../../components/brand/BrandFive';
 import TopNavOne from '../../components/header/TopNavOne';
 import HeroBannerFour from '../../components/hero-banner/HeroBannerFour';
-import FancyFeatureThirteen from '../../components/feature/FancyFeatureThirteen';
 import FancyFeatureFourteen from '../../components/feature/FancyFeatureFourteen';
 import CommonCounter from '../../components/counter/CommonCounter';
-import FancyFeatureFifteen from '../../components/feature/FancyFeatureFifteen';
 import TestimonialThree from '../../components/testimonial/TestimonialThree'
 import PortfolioGalleryTwo from '../../components/portfolio/PortfolioGalleryTwo';
 import PriceTwo from '../../components/pricing/PriceTwo';
@@ -55,7 +53,7 @@ const MachineLearning = () => {
                                 {/* /.title-style-one */}
                             </div>
                         </div>
-                        <FancyFeatureThirteen/>
+                        
                     </div>
                     {/* /.container */}
                     <img src="images/shape/shape_31.svg" alt="" className="shapes shape-one"/>
@@ -124,9 +122,7 @@ const MachineLearning = () => {
                             <h2 className="main-title">How sinco works</h2>
                         </div>
                         {/* /.title-style-one */}
-                        <div className="bg-wrapper">
-                            <FancyFeatureFifteen/>
-                        </div>
+                        
                         {/* /.bg-wrapper */}
                     </div>
                     {/* /.container */}

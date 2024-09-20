@@ -2,7 +2,8 @@ import React,{Fragment, useState} from 'react';
 import { Link } from 'react-router-dom';
 import SearchModal from '../../components/search-modal/SearchModal';
 import MobileMenu from './MobileMenu';
-import ThemeMainMenue from './ThemeMainMenu'
+import ThemeMainMenue from './ThemeMainMenu';
+import Naavi from '../../assets/images/logo/logo_01.png';
 
 const TopNavTwo = () => {
     const [navbar, setNavbar] = useState(false);
@@ -34,7 +35,7 @@ const TopNavTwo = () => {
                         <div className="container">
                             <div className="d-flex align-items-center justify-content-between">
                                 <div className="call-button">Call us
-                                    <a href="#">(+880) 321 782 110</a>
+                                    <a href="#">+49 17686765221</a>
                                 </div>
                                 <div className="right-widget d-flex align-items-center">
                                     <div className="lang-dropdown me-3 me-sm-4">
@@ -71,7 +72,7 @@ const TopNavTwo = () => {
                     {/* /.top-header */}
                     <div className="container d-flex align-items-center justify-content-between">
                         <div className="logo order-lg-0">
-                            <Link to="/" className="d-block"><img src="images/logo/logo_01.png" alt="" width={130}/></Link>
+                            <Link to="/" className="d-block"><img src={Naavi} alt="" width={130}/></Link>
                         </div>
                         <a
                             href="contact-us.html"

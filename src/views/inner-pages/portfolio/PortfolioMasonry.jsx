@@ -15,7 +15,7 @@ const PortfolioMasonry = () => {
         <Fragment>
             <div className="main-page-wrapper">
                 <Helmet>
-                    <title>Portfolio 2 Column || Sinco - Data Science & Analytics React Template</title>
+                    <title>Solution || Naavi - Find The Path To Your Next Goal</title>
                 </Helmet>
                 {/* helmet end */}
 

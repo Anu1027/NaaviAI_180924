@@ -27,6 +27,7 @@ const TopNavFour = () => {
   }
 
   window.addEventListener('scroll', toggleMenu);
+  
 
 
 
@@ -41,7 +42,7 @@ const TopNavFour = () => {
                         </div>
                         <div className="right-widget d-flex align-items-center ms-auto order-lg-3">
                             <div className="call-button d-none d-xl-block me-5">Call us
-                                <a href="#">(+880) 321 782 110</a>
+                                <a href="#">+49 17686765221</a>
                             </div>
                             <button
                                 className="menu-search-btn tran3s"
@@ -60,7 +61,7 @@ const TopNavFour = () => {
                                         className="d-flex flex-column align-items-center justify-content-center mt-70">
                                         <a href="contact-us.html" className="send-msg-btn tran3s mb-10">Send us Message</a>
                                         <div className="call-button">Call us
-                                            <a href="#">(+880) 321 782 110</a>
+                                            <a href="#">+49 17686765221</a>
                                         </div>
                                     </div>
                                 </div>

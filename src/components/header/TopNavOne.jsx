@@ -2,7 +2,8 @@ import React, {Fragment, useState} from 'react'
 import { Link } from 'react-router-dom';
 import SearchModal from '../../components/search-modal/SearchModal';
 import MobileMenu from './MobileMenu';
-import ThemeMainMenue from './ThemeMainMenu'
+import ThemeMainMenue from './ThemeMainMenu';
+import Naavi from '../../assets/images/logo/logo_01.png';
 
 const TopNavOne = () => {
     const [navbar, setNavbar] = useState(false);
@@ -31,7 +32,7 @@ const TopNavOne = () => {
                 <div className="inner-content">
                     <div className="d-flex align-items-center justify-content-between">
                         <div className="logo order-lg-0">
-                            <Link to="/" className="d-block"><img src="images/logo/logo_01.png" alt="" width={130}/></Link>
+                            <Link to="/" className="d-block"><img src={Naavi} alt="" width={130}/></Link>
                         </div>
                         <div
                             className="right-widget d-flex align-items-center ms-auto ms-lg-0 order-lg-3">

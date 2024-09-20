@@ -12,7 +12,7 @@ const CounterSix = () => {
                             <div className="col-md-4 col-sm-6" data-aos="fade-up">
                                 <div className="counter-block-one text-center mb-20">
                                     <div className="main-count"><span className="counter"><CommonCounter /> </span>mil</div>
-                                    <p>Human labor hours saved <br /> with help of AI</p>
+                                    <p>Human labor h<br /> with help of AI</p>
                                 </div> {/* /.counter-block-one */}
                             </div>
                             <div className="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay={100}>

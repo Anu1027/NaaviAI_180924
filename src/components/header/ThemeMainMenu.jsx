@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import Naavi from '../../assets/images/logo/logo_01.png'
 
 const AboutMenu = [
     {
@@ -88,7 +89,7 @@ const ThemeMainMenu = () => {
             <ul className="navbar-nav">
                 <li className="d-block d-lg-none">
                     <div className="logo">
-                        <Link to="/"><img src="images/logo/logo_01.png" alt="" width={130} /></Link>
+                        <Link to="/"><img src={Naavi} alt="" width={130} /></Link>
                     </div>
                 </li>
                 <li className={`nav-item ${location.pathname === '/' ? 'active' : ''}`}>
@@ -98,13 +99,13 @@ const ThemeMainMenu = () => {
                     <Link className="nav-link" to="/Problem">Problem</Link>
                 </li>
                 <li className={`nav-item ${location.pathname.startsWith('/portfolio') ? 'active' : ''}`}>
-                    <Link className="nav-link" to="/portfolio-3">Solution</Link>
+                    <Link className="nav-link" to="/Solution">Solution</Link>
                 </li>
                 <li className={`nav-item ${location.pathname.startsWith('/blog') ? 'active' : ''}`}>
-                    <Link className="nav-link" to="/blog-grid">Partners</Link>
+                    <Link className="nav-link" to="/Partners">Partners</Link>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link" to="/contact" role="button">Contact</Link>
+                    <Link className="nav-link" to="/Contact" role="button">Contact</Link>
                 </li>
             </ul>
         </Fragment>

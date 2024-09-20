@@ -10,6 +10,8 @@ import {
     SubMenu
 } from 'react-pro-sidebar';
 import 'react-pro-sidebar/dist/css/styles.css';
+import Naavi from '../../assets/images/logo/naavimobilelogo.jpg';
+
 
 // const HomeMenu =[
 //   {
@@ -75,7 +77,7 @@ const TeamMenu =[
 const PortfolioMenu =[
   {
     name: 'Portfolio 3 Column',
-    routerPath: '/portfolio-3'
+    routerPath: '/Solution'
   },
   {
     name: 'Portfolio 2 Column',
@@ -139,7 +141,7 @@ const MobileMenu = () => {
                     : 'mobile-menu'}>
                     <SidebarHeader>
                         <div className="mobile-logo">
-                            <Link to="/"><img src="images/logo/logo_02.png" alt=""/></Link>
+                            <Link to="/"><img src={Naavi} alt=""/></Link>
                         </div>
                        <div className="close-menu" onClick={handleClick}>
                         <i class="bi bi-x-lg"></i>

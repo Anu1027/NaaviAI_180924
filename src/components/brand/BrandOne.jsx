@@ -30,7 +30,7 @@ const BrandLogo = [
         dataDelay: '200'
     }, 
     {
-        img: 'Plogo-13',
+        img: 'Plogo-1',
         dataDelay: '300'
     }, 
     {
@@ -51,7 +51,7 @@ const BrandOne = () => {
                                 className="partner-logo-block-one d-inline-block"
                                 data-aos="fade-up"
                                 data-aos-delay={item.dataDelay}>
-                                <a href="#" className="d-flex align-items-center justify-content-center"><img src={`images/logo/${item.img}.png`} alt=""/></a>
+                                <a href="#" className="d-flex align-items-center justify-content-center"><img src={`images/logo/${item.img}.jpeg`} alt=""/></a>
                             </li>
                         ))}
                     </ul>

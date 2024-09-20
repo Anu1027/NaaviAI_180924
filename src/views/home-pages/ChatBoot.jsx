@@ -8,9 +8,8 @@ import HeroBannerThree from '../../components/hero-banner/HeroBannerThree';
 import FancyFeatureEight from '../../components/feature/FancyFeatureEight';
 import FeatureTab from '../../components/tab/FeatureTab';
 import FancyFeatureEleven from '../../components/feature/FancyFeatureEleven';
-import CommonCounterTwo from '../../components/counter/CommonCounterTwo'
-import FancyFeatureTwelve from '../../components/feature/FancyFeatureTwelve';
-import TestimonialOne from '../../components/testimonial/TestimonialOne'
+import CommonCounterTwo from '../../components/counter/CommonCounterTwo';
+import TestimonialOne from '../../components/testimonial/TestimonialOne';
 import BrandFour from '../../components/brand/BrandFour';
 import BannerTwo from '../../components/short-banner/BannerTwo';
 import BlogTwo from '../../components/blog/BlogTwo';
@@ -174,7 +173,7 @@ const ChatBoot = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-xl-5 col-md-6 order-md-last">
-                                <FancyFeatureTwelve/>
+                                
                             </div>
                             <div className="col-xl-7 col-md-6 order-md-first" data-aos="fade-right">
                                 <div

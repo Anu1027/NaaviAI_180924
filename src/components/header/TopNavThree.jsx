@@ -2,6 +2,7 @@ import React,{Fragment, useState} from 'react';
 import {Link} from 'react-router-dom';
 import SearchModal from '../../components/search-modal/SearchModal'
 import MobileMenu from './MobileMenu';
+import Naavi from '../../assets/images/logo/logo_01.png'
 
 import ThemeMainMenu from './ThemeMainMenu';
 
@@ -35,7 +36,7 @@ const TopNavThree = () => {
                 <div className="inner-content">
                     <div className="container d-flex align-items-center justify-content-between">
                         <div className="logo order-lg-0">
-                            <Link to="/" className="d-block"><img src="images/logo/logo_02.png" alt="" width={129}/></Link>
+                            <Link to="/" className="d-block"><img src={Naavi} alt="" width={129}/></Link>
                         </div>
                         <div
                             className="right-widget d-flex align-items-center ms-auto ms-lg-0 order-lg-3">

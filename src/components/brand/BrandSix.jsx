@@ -3,7 +3,7 @@ import React,{Fragment} from 'react';
 
 const BrandLogo = [
     {
-        img: 'Plogo-13',
+        img: 'Plogo-1',
         dataDelay: '',
     },
     {
@@ -34,7 +34,7 @@ const BrandSix = () => {
                     className="partner-logo-block-one d-inline-block"
                     data-aos="fade-up"
                     data-aos-delay={item.dataDelay}>
-                    <a href="#" className="d-flex align-items-center justify-content-center"><img src={`images/logo/${item.img}.png`} alt=""/></a>
+                    <a href="#" className="d-flex align-items-center justify-content-center"><img src={`images/logo/${item.img}.jpeg`} alt=""/></a>
                 </li>
                 ))}
             </ul>

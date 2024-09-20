@@ -81,7 +81,7 @@ const AppRouter = () => {
         <Route path="/faq" element={<FAQ />} />
         <Route path="/error" element={<Error />} />
 
-        <Route path="/portfolio-3" element={<Portfolio3Column />} />
+        <Route path="/Solution" element={<Portfolio3Column />} />
         <Route path="/portfolio-2" element={<Portfolio2Column />} />
         <Route path="/portfolio-masonry" element={<PortfolioMasonry />} />
         <Route path="/portfolio-single" element={<PortfolioSingle />} />

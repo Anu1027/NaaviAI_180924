@@ -108,16 +108,16 @@ const UserAnalysis = () => {
                 <CounterOne/> 
                 {/* /Counter one end */}
 
-                <div className="feedback-section-five pt-130 lg-pt-100 pb-95 lg-pb-40">
+                {/* <div className="feedback-section-five pt-130 lg-pt-100 pb-95 lg-pb-40">
                     <div className="container">
                         <div className="title-style-three text-center" data-aos="fade-up">
                             <div className="sc-title">Testimonials</div>
                             <h2 className="main-title">Words from <span>Client</span>
                             </h2>
                         </div>
-                        {/* /.title-style-three */}
+                        
                         <TestimonialFive/>
-                        {/* /.feedback_slider_four */}
+                        
                     </div>
                     <img
                         src="images/media/img_08.jpg"
@@ -155,7 +155,7 @@ const UserAnalysis = () => {
                         style={{
                         outlineWidth: '5px'
                     }}/>
-                </div>
+                </div> */}
                 {/* /.feedback-section-five */}
 
                 <div
@@ -188,7 +188,7 @@ const UserAnalysis = () => {
                 </div>
                 {/* /.fancy-feature-twenty */}
 
-                <div className="blog-section-three position-relative pt-70 lg-pt-40">
+                {/* <div className="blog-section-three position-relative pt-70 lg-pt-40">
                     <div className="container">
                         <div
                             className="title-style-three text-center mb-50 lg-mb-20"
@@ -197,10 +197,10 @@ const UserAnalysis = () => {
                             <h2 className="main-title">Inside Story &amp; <span>Blog</span>
                             </h2>
                         </div>
-                        {/* /.title-style-three */}
+                       
                         <Blog/>
                     </div>
-                </div>
+                </div> */}
                 {/* /.blog-section-three */}
 
                 <Contact/> {/* /.Fancy Feature 21 end */}

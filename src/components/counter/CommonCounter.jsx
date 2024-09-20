@@ -3,27 +3,27 @@ import CountUp from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor';
 
 const CountContent = [
-    {
-        mark: '',
-        num: 20,
-        text: 'mil',
-        desc: 'Human labor hours saved',
-        desc2: 'with help of AI',
-    },
-    {
-        mark: '',
-        num: 1.3,
-        text: 'b+',
-        desc: 'Generated revenue by',
-        desc2: 'AI Solutions',
-    },
-    {
-        mark: '$',
-        num: 15,
-        text: 'mil+',
-        desc: 'Saved operational costs',
-        desc2: 'due to AI',
-    }
+    // {
+    //     mark: '',
+    //     num: 20,
+    //     text: 'mil',
+    //     desc: 'Human labor hours saved',
+    //     desc2: 'with help of AI',
+    // },
+    // {
+    //     mark: '',
+    //     num: 1.3,
+    //     text: 'b+',
+    //     desc: 'Generated revenue by',
+    //     desc2: 'AI Solutions',
+    // },
+    // {
+    //     mark: '$',
+    //     num: 15,
+    //     text: 'mil+',
+    //     desc: 'Saved operational costs',
+    //     desc2: 'due to AI',
+    // }
 ]
 
 const CommonCounter = () => {
