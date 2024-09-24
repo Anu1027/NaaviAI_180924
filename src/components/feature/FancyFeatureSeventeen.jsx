@@ -3,24 +3,24 @@ import { Link } from 'react-router-dom'
 
 const ServiceContent = [
     {
-        icon: "icon_31",
-        title: 'Data Science',
-        desc: `Convert data noise intelligent insights for competitive differentiation qulaity check equlity.`,
+        icon: "icon_32",
+        title: 'Large Language Models',
+        desc: `Utilizing LLMs to transform complex data into clear, actionable insights. We craft personalized learning paths that align with your academic goals.`,
         arrow: 'icon_20',
         datadelay: '',
         dataAos: 'fade-right',
         className: ''
     }, {
-        icon: "icon_32",
-        title: 'Data Science',
-        desc: `Convert data noise intelligent insights for competitive differentiation qulaity check equlity.`,
+        icon: "icon_31",
+        title: 'Knowledge Graphs',
+        desc: `Crafting intelligent pathways with Knowledge Graphs that connect your educational dots. Our maps guide you toward your academic goals.`,
         arrow: 'icon_20',
         datadelay: '100',
         dataAos: 'fade-up',
         className: 'active'
     }, {
         icon: "icon_33",
-        title: 'Data Science',
+        title: 'Combining KGs with LLMs',
         desc: `Convert data noise intelligent insights for competitive differentiation qulaity check equlity.`,
         arrow: 'icon_20',
         dataDelay: '',

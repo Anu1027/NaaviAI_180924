@@ -52,6 +52,9 @@ import Contact from '../views/inner-pages/contact/Contact';
 // Not Found Page
 import NotFound from "../views/NotFound";
 
+//Brand page
+import BrandTwo from '../components/brand/BrandTwo';
+
 
 
 
@@ -81,7 +84,7 @@ const AppRouter = () => {
         <Route path="/faq" element={<FAQ />} />
         <Route path="/error" element={<Error />} />
 
-        <Route path="/Solution" element={<Portfolio3Column />} />
+        <Route path="/solution" element={<Portfolio3Column />} />
         <Route path="/portfolio-2" element={<Portfolio2Column />} />
         <Route path="/portfolio-masonry" element={<PortfolioMasonry />} />
         <Route path="/portfolio-single" element={<PortfolioSingle />} />
@@ -93,6 +96,7 @@ const AppRouter = () => {
         <Route path="/blog-details" element={<BlogDetails />} />
 
         <Route path="/contact" element={<Contact />} />
+        <Route path="/partners" element={<BrandTwo />} />
 
         <Route path="*" element={<NotFound />} />
       </Routes>

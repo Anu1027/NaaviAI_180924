@@ -24,13 +24,13 @@ const PortfolioMasonry = () => {
 
                 <div className="theme-inner-banner">
                     <div className="container">
-                        <h2 className="intro-title">Work <span>Gallery</span>
+                        <h2 className="intro-title">LLMs-Synergised with <span>Knowledge Graphs (KG)</span>
                         </h2>
                         <ul className="page-breadcrumb style-none d-flex">
                             <li>
                                 <Link to="/">Home</Link>
                             </li>
-                            <li className="current-page">Portfolio</li>
+                            <li className="current-page">Solution</li>
                         </ul>
                     </div>
                     <img src="images/assets/ils_20.svg" alt="" className="shapes illustration-two"/>
@@ -95,4 +95,4 @@ const PortfolioMasonry = () => {
     )
 }
 
-export default PortfolioMasonry
+export default PortfolioMasonry 

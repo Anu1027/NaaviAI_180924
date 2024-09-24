@@ -28,6 +28,39 @@ img {
     // padding-right: 80px;
     display: block;
 }
+
+//problem page styles
+.error-page-content .page-breadcrumb{
+    justify-content: center;
+    margin: 50px -2px;
+}
+.error-page-content .page-breadcrumb li {
+    padding: 0 2px;
+    font-size: 17px;
+    color: #000f5c;
+    position: relative;
+}
+.error-page-content .page-breadcrumb li:after {
+    content: "\f285";
+    font-family: bootstrap-icons;
+    display: inline-block;
+    font-size: 11px;
+    padding-left: 6px;
+    color: var(--prime-three);
+}
+.error-page-content .page-breadcrumb li a {
+    color: #000f5c;
+}
+.error-page-content .page-breadcrumb li a:hover {
+    text-decoration: underline;
+}
+.error-page-content .page-breadcrumb li.current-page {
+    color: var(--prime-three);
+}
+.error-page-content .page-breadcrumb li.current-page:after {
+    display: none;
+}
+//problem page styles
 button {
     border: none;
     outline: none;

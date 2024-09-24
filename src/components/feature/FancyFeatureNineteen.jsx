@@ -4,20 +4,20 @@ const ProcessContent = [
     {
         num: 1,
         className: 'numb tran3s',
-        heading: 'Frame the Problem',
-        desc: 'Learn content by interacting with an expert lesson or watching a video.',
+        heading: 'Profile Level 1',
+        desc: 'General Details',
         dataDelay: ''
     }, {
         num: 2,
         className: 'numb tran3s',
-        heading: 'Collect the Data',
-        desc: 'Practice what you learned on realistic SAT test questions.',
+        heading: 'Profile Level 2 - Basic Academic Performance',
+        desc: 'Grades and Achievements',
         dataDelay: '50'
     }, {
         num: 3,
         className: 'numb tran3s',
-        heading: 'Process the Data',
-        desc: 'Have to be repudiated annoyances accepted the wise lorem ispum sample text.',
+        heading: 'Profile Level 3 - Psychometric Analysis',
+        desc: 'Personality and Skills',
         dataDelay: '100'
     }
 ]
@@ -28,7 +28,7 @@ const FancyFeatureNineteen = () => {
             <div className="block-style-thirteen" data-aos="fade-right">
                 <div className="title-style-three pb-15">
                     <div className="sc-title">WORK PROCESS</div>
-                    <h2 className="main-title">How sinco <span>process</span> & works.</h2>
+                    <h2 className="main-title">How Naavi <span>process</span> & works.</h2>
                 </div>
                 {/* /.title-style-three */}
                 <ul className="style-none list-item">

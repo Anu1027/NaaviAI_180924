@@ -19,17 +19,17 @@ const PageContent = [
         name: 'Home',
         routerPath: '/'
     }, {
-        name: 'Pricing',
-        routerPath: '/price'
+        name: 'Problem',
+        routerPath: '/problem'
     }, {
-        name: 'About us',
-        routerPath: '/about-two'
+        name: 'Solution',
+        routerPath: '/solution'
     }, {
-        name: 'Service',
-        routerPath: '/service-one'
+        name: 'Partners',
+        routerPath: '/partners'
     }, {
-        name: 'Blog',
-        routerPath: '/blog-grid'
+        name: 'Contact',
+        routerPath: '/contact'
     }
 ];
 const ServiceContent = [
@@ -74,8 +74,7 @@ const FooterFour = () => {
                     <div className="logo">
                         <Link to="/" className="d-block"><img src={Naavi} alt="" width={120}/></Link> 
                     </div>
-                    <p>In this class, you will learn about the most effective machine learning
-                        techniques, and gain practice implementing them.</p>
+                    <p>In this class, you will learn about the Guiding students on their educational journeys by creating personalized pathways to success, utilizing advanced AI technologies like LLMs and knowledge graphs.</p>
                     <ul className="d-flex social-icon style-none">
                         {SocialContent.map((val, i) => (
                             <li key={i}>

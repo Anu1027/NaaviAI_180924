@@ -11,7 +11,7 @@ const About = () => {
                             <div className="block-style-two" data-aos="fade-left">
                                 <div className="title-style-three">
                                     <div className="sc-title">Over 150k+ Client</div>
-                                    <h2 className="main-title">Target <span>Audience</span> for your business.</h2>
+                                    <h2 className="main-title">Target <span>Audience</span> for Naavi</h2>
                                 </div>
                                 {/* /.title-style-three */}
                                 <p className="pt-20 pb-25 lg-pb-20">AI technology is perfect for best business
@@ -21,7 +21,7 @@ const About = () => {
                                     <li>Page Load (time, size, number of requests).</li>
                                     <li>Advance Data analysis operation.</li>
                                 </ul>
-                                <a href="about-us2.html" className="btn-eight mt-50 lg-mt-30">More about us</a>
+                                {/* <a href="about-us2.html" className="btn-eight mt-50 lg-mt-30">More about us</a> */}
                             </div>
                             {/* /.block-style-two */}
                         </div>

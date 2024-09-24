@@ -4,7 +4,7 @@ import {Helmet} from 'react-helmet';
 
 import TopNavFour from '../../../components/header/TopNavFour';
 import InnerBanner from '../../../components/page-title/InnerBanner';
-import PortfolioGalleryFour from '../../../components/portfolio/PortfolioGalleryFour';
+// import PortfolioGalleryFour from '../../../components/portfolio/PortfolioGalleryFour';
 import BannerOne from '../../../components/short-banner/BannerOne';
 import FooterFour from '../../../components/footer/FooterFour';
 import CopyRightFour from '../../../components/footer/CopyRightFour';
@@ -22,17 +22,17 @@ const Portfolio2Column = () => {
                 <TopNavFour/> {/* theme-menu-four */}
 
                 <div className="theme-inner-banner">
-                    <InnerBanner intro="Work Gallery" currpage="Portfolio"/>
+                    <InnerBanner intro="LLMs-Synergised with Knowledge Graphs (KG)" currpage="Solution"/>
                     <img src="images/shape/shape_38.svg" alt="" className="shapes shape-one"/>
                     <img src="images/shape/shape_39.svg" alt="" className="shapes shape-two"/>
                 </div>
                 {/* /.theme-inner-banner */}
 
-                <div className="portfolio-gallery-four mt-140 mb-130 lg-mt-90 lg-mb-50">
+                {/* <div className="portfolio-gallery-four mt-140 mb-130 lg-mt-90 lg-mb-50">
                     <div className="container">
                         <PortfolioGalleryFour/>
                     </div>
-                </div>
+                </div> */}
                 {/* /.portfolio-gallery-four */}
 
                 <div className="fancy-short-banner-one position-relative bottom-transform">

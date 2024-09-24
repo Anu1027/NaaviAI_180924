@@ -911,7 +911,7 @@ body .btn-eight:hover {
     content: "";
     position: absolute;
     border-radius: 50%;
-    width: 220px;
+    width: 260px;
     height: 220px;
     left: -50px;
     top: -70px;
@@ -4090,7 +4090,7 @@ body .btn-eight:hover {
 }
 .fancy-feature-nineteen .bg-shape {
     right: 0;
-    top: -14%;
+    top: -35%;
 }
 .fancy-feature-nineteen .bg-shape-two {
     left: 0;
@@ -4385,9 +4385,12 @@ body .btn-eight:hover {
 }
 .theme-inner-banner .intro-title {
     font-family: "gorditamedium";
-    font-size: 60px;
+    font-size: 43px;
     letter-spacing: -0.8px;
-    margin-bottom: 15px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    text-align: center;
+
 }
 .theme-inner-banner .intro-title span {
     color: var(--prime-three);
@@ -4395,7 +4398,8 @@ body .btn-eight:hover {
     text-decoration-thickness: 5px;
 }
 .theme-inner-banner .page-breadcrumb {
-    margin: 0 -2px;
+    margin: 100px -2px;
+    justify-content: center;
 }
 .theme-inner-banner .page-breadcrumb li {
     padding: 0 2px;
@@ -5581,4 +5585,33 @@ body .btn-eight:hover {
     font-size: 22px;
     line-height: 35px;
     // padding: 15px 0 20px;
+}
+
+
+/* Style for the container holding both text and image */
+.content-container {
+    display: flex; /* Align items in a row */
+    align-items: flex-start; /* Align items to the start vertically */
+    justify-content: space-between; /* Add space between text and image */
+    margin: 20px 0; /* Add margin for spacing */
+}
+
+/* Style for the text content */
+.text-content {
+    flex: 1; /* Allow text to take up available space */
+    margin-right: 20px; /* Add space between text and image */
+    // font-size: 20px;
+}
+
+/* Style for the image container */
+.image-container {
+    flex: 0 0 100%; /* Set the width of the image container */
+    max-width: 100%; /* Ensure it does not exceed 40% of the parent */
+}
+
+/* Style for the image */
+.image-container img {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: add rounded corners */
 }

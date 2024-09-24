@@ -17,7 +17,7 @@ const HeroBannerFive = () => {
                             <h1 className="hero-heading">Find Your Education<span> Pathway . </span></h1>
                             <p className="text-lg mb-50 pt-40 pe-xl-5 md-pt-30 md-mb-40">Naavi is your partner in finding the perfect education path, designed for your unique career goals.</p>
                             <ul className="style-none button-group d-flex align-items-center">
-                                <li className="me-4"><a href="contact-us.html" className="demo-btn ripple-btn tran3s">Generate</a></li>
+                                <li className="me-4"><a href="" className="demo-btn ripple-btn tran3s">Generate</a></li>
                                 {/* <li><a className="fancybox video-icon tran3s" data-fancybox href="#" onClick={OpenModal} ><i className="fas fa-play" /></a></li> */}
                             </ul>
                         </div>

@@ -47,9 +47,7 @@ const UserAnalysis = () => {
                                 {/* /.title-style-three */}
                             </div>
                             <div className="col-xl-6 col-lg-7" data-aos="fade-left">
-                                <p className="m0 text-center text-lg-start md-pt-30">NLP entails applying
-                                    algorithms to identify and extract rules such that the unstructured language
-                                    data is converted.</p>
+                                <p className="m0 text-center text-lg-start md-pt-30">Leveraging AI and Data Science, we unlock your educational potential with personalized pathways. Our advanced algorithms craft unique roadmaps to guide you toward academic success.</p>
                             </div>
                         </div>
                         <FancyFeatureSeventeen/>

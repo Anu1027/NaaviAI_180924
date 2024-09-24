@@ -16,24 +16,26 @@ const BrandLogo = [
 const BrandTwo = () => {
     return (
         <Fragment>
-            <ul className="style-none text-center mt-40 lg-mt-10">
-                {BrandLogo.map((item, i) => (
-                    <li
-                        key={i}
-                        className="partner-logo-block-one d-inline-block"
-                        data-aos="fade-up"
-                        data-aos-delay={item.dataDelay}>
-                        <a href="#" className="d-flex align-items-center justify-content-center">
-                            {/* Render only one image based on the correct extension */}
-                            <img
-                                src={`images/logo/${item.img}.${item.extension}`}  // Correctly use the extension from the array
-                                alt={`${item.img} logo`}  // Provide a descriptive alt tag
-                                className="brand-logo-img"
-                            />
-                        </a>
-                    </li>
-                ))}
-            </ul>
+            <div id="partners-section"> {/* Add this ID to target for scrolling */}
+                <ul className="style-none text-center mt-40 lg-mt-10">
+                    {BrandLogo.map((item, i) => (
+                        <li
+                            key={i}
+                            className="partner-logo-block-one d-inline-block"
+                            data-aos="fade-up"
+                            data-aos-delay={item.dataDelay}>
+                            <a href="#" className="d-flex align-items-center justify-content-center">
+                                {/* Render only one image based on the correct extension */}
+                                <img
+                                    src={`images/logo/${item.img}.${item.extension}`}  // Correctly use the extension from the array
+                                    alt={`${item.img} logo`}  // Provide a descriptive alt tag
+                                    className="brand-logo-img"
+                                />
+                            </a>
+                        </li>
+                    ))}
+                </ul>
+            </div>
         </Fragment>
     );
 };

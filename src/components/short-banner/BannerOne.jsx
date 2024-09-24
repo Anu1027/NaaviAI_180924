@@ -6,7 +6,7 @@ const BannerOne = () => {
         <Fragment>
             <div className="row align-items-center gx-xxl-5">
                 <div className="col-lg-6 text-center text-lg-start">
-                    <div className="sub-title">Work Inquiry</div>
+                    {/* <div className="sub-title">Work Inquiry</div> */}
                     <h3 className="pe-xxl-5 md-pb-20">Having Any Query! Book an appointment.</h3>
                 </div>
                 <div className="col-lg-6 text-center text-lg-end">

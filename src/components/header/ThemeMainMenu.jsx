@@ -96,16 +96,16 @@ const ThemeMainMenu = () => {
                     <Link className="nav-link" to="/">Home</Link>
                 </li>
                 <li className={`nav-item ${location.pathname.startsWith('/pages') ? 'active' : ''}`}>
-                    <Link className="nav-link" to="/Problem">Problem</Link>
+                    <Link className="nav-link" to="/problem">Problem</Link>
                 </li>
                 <li className={`nav-item ${location.pathname.startsWith('/portfolio') ? 'active' : ''}`}>
-                    <Link className="nav-link" to="/Solution">Solution</Link>
+                    <Link className="nav-link" to="/solution">Solution</Link>
                 </li>
                 <li className={`nav-item ${location.pathname.startsWith('/blog') ? 'active' : ''}`}>
-                    <Link className="nav-link" to="/Partners">Partners</Link>
+                    <Link className="nav-link" to="/">Partners</Link>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link" to="/Contact" role="button">Contact</Link>
+                    <Link className="nav-link" to="/contact" role="button">Contact</Link>
                 </li>
             </ul>
         </Fragment>
