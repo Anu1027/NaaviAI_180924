@@ -79,6 +79,59 @@ textarea {
     box-shadow: none;
     transition: all 0.3s ease-in-out;
 }
+
+//solution pages styles
+/* For justified text alignment */
+.theme-inner-banner.portfolio-banner .intro-title {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.portfolio-text p {
+    text-align: justify;
+    hyphens: auto; /* Helps with text justification on small screens */
+    margin-left: 1.5rem !important;
+    
+}
+
+/* For consistent list alignment */
+.portfolio-text ul {
+    padding-left: 1.5rem; /* Adjust as needed */
+    margin: 1rem 0;
+}
+
+.portfolio-text ul li {
+    // text-align: justify;
+    margin-bottom: 0.5rem; /* Adjust the spacing between list items */
+    margin-left: 1rem;
+    // font-size: 16px;
+}
+/* Responsive Image Styling */
+.portfolio-image img {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the image */
+}
+
+@media (max-width: 768px) {
+    .portfolio-content {
+        flex-direction: column; /* Stack text and image vertically on small screens */
+    }
+
+    .portfolio-image {
+        margin-top: 20px; /* Add space between text and image in mobile view */
+    }
+
+    .portfolio-text, .portfolio-image {
+        width: 100%; /* Make sure both text and image take full width on mobile */
+    }
+
+    .portfolio-image img {
+        max-width: 100%; /* Reduce image size slightly on mobile for better spacing */
+    }
+}
+
 audio,
 video,
 canvas {

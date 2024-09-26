@@ -101,9 +101,9 @@ const ThemeMainMenu = () => {
                 <li className={`nav-item ${location.pathname.startsWith('/portfolio') ? 'active' : ''}`}>
                     <Link className="nav-link" to="/solution">Solution</Link>
                 </li>
-                <li className={`nav-item ${location.pathname.startsWith('/blog') ? 'active' : ''}`}>
+                {/* <li className={`nav-item ${location.pathname.startsWith('/blog') ? 'active' : ''}`}>
                     <Link className="nav-link" to="/">Partners</Link>
-                </li>
+                </li> */}
                 <li className="nav-item">
                     <Link className="nav-link" to="/contact" role="button">Contact</Link>
                 </li>

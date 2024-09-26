@@ -18,7 +18,7 @@ const CopyRightFour = () => {
                     </li>
                 </ul>
                 <p className="copyright text-center order-lg-0 pb-15">Copyright @{new Date().getFullYear()}{" "}
-                    sinco inc.</p>
+                    naavi inc.</p>
             </div>
         </Fragment>
     )

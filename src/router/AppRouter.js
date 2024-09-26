@@ -52,8 +52,8 @@ import Contact from '../views/inner-pages/contact/Contact';
 // Not Found Page
 import NotFound from "../views/NotFound";
 
-//Brand page
-import BrandTwo from '../components/brand/BrandTwo';
+
+
 
 
 
@@ -96,8 +96,6 @@ const AppRouter = () => {
         <Route path="/blog-details" element={<BlogDetails />} />
 
         <Route path="/contact" element={<Contact />} />
-        <Route path="/partners" element={<BrandTwo />} />
-
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Fragment>

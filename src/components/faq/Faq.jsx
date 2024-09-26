@@ -3,31 +3,18 @@ import {Accordion, AccordionItem, AccordionItemHeading, AccordionItemButton, Acc
 
 const FaqContent = [
     {
-        title: 'What is web hosting?',
-        desc: `They not only understand what I say but read between the lines and also give
-        me ideas of my own. AI technology is perfect for best business solutions.`,
+        title: 'What are educational pathways?',
+        desc: `Educational pathways are structured routes that guide students through various learning experiences, helping them achieve specific academic or career goals. `,
         expand: 'a'
     }, {
-        title: 'How do you weigh different criteria in your process?',
-        desc: `They not only understand what I say but read between the lines and also give
-        me ideas of my own. AI technology is perfect for best business solutions.`,
+        title: 'How should we interact or provide information?',
+        desc: `We should interact by delivering clear, concise, and relevant information that aligns with the needs and interests of the audience. Engaging communication fosters understanding and encourages meaningful dialogue.`,
         expand: 'b'
     }, {
-        title: 'What can I use to build my website?',
-        desc: `They not only understand what I say but read between the lines and also give
-        me ideas of my own. AI technology is perfect for best business solutions.`,
+        title: 'How does the personalisation works?',
+        desc: `Personalization works by analyzing individual preferences, behaviors, and data to tailor content or experiences to each user. It ensures relevance by adapting to unique needs, creating a more engaging and customized interaction.`,
         expand: 'c'
-    }, {
-        title: 'If I already have a website, can I transfer it to your web hosting?',
-        desc: `They not only understand what I say but read between the lines and also give
-        me ideas of my own. AI technology is perfect for best business solutions.`,
-        expand: 'd'
-    }, {
-        title: 'How can I accept credit cards online?',
-        desc: `They not only understand what I say but read between the lines and also give
-        me ideas of my own. AI technology is perfect for best business solutions.`,
-        expand: 'e'
-    }
+    },
 ]
 
 const Faq = () => {

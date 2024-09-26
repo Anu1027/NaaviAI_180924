@@ -24,10 +24,7 @@ const PageContent = [
     }, {
         name: 'Solution',
         routerPath: '/solution'
-    }, {
-        name: 'Partners',
-        routerPath: '/partners'
-    }, {
+    },{
         name: 'Contact',
         routerPath: '/contact'
     }

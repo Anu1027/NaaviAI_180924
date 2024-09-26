@@ -4427,6 +4427,50 @@ body .btn-eight:hover {
 .theme-inner-banner .page-breadcrumb li.current-page:after {
     display: none;
 }
+
+//contact page bread crumb styles
+/* Breadcrumb styles */
+.contact-breadcrumb-wrapper {
+    margin: 100px -2px;
+    justify-content: center;
+    
+}
+
+.contact-page-breadcrumb li {
+    padding: 0 2px;
+    font-size: 17px;
+    color: #000f5c;
+    position: relative;
+    list-style-type: none; /* Remove the default bullet points */
+
+}
+
+.contact-page-breadcrumb li:after {
+    content: "\f285";
+    font-family: bootstrap-icons;
+    display: inline-block;
+    font-size: 11px;
+    padding-left: 6px;
+    color: var(--prime-three);
+}
+
+.contact-page-breadcrumb li a {
+    color: #000f5c;
+}
+
+.contact-page-breadcrumb li a:hover {
+    text-decoration: underline;
+}
+
+.contact-page-breadcrumb li.current-page {
+    color: var(--prime-three);
+}
+
+.contact-page-breadcrumb li.current-page:after {
+    display: none;
+}
+
+
 .theme-inner-banner .illustration-one {
     width: 36%;
     right: 10%;
@@ -5584,6 +5628,7 @@ body .btn-eight:hover {
 .error-page-content p {
     font-size: 22px;
     line-height: 35px;
+    // text-align: justify;
     // padding: 15px 0 20px;
 }
 

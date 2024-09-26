@@ -50,9 +50,9 @@ const MobileMenu = () => {
                             <MenuItem className={location.pathname.startsWith('/Solution') ? 'active' : ''}>
                                 <Link to="/solution" onClick={handleClick}>Solution</Link>
                             </MenuItem>
-                            <MenuItem className={location.pathname.startsWith('/Partners') ? 'active' : ''}>
+                            {/* <MenuItem className={location.pathname.startsWith('/Partners') ? 'active' : ''}>
                                 <Link to="" onClick={handleClick}>Partners</Link>
-                            </MenuItem>
+                            </MenuItem> */}
                             <MenuItem className={location.pathname === '/Contact' ? 'active' : ''}>
                                 <Link to="/contact" onClick={handleClick}>Contact</Link>
                             </MenuItem>

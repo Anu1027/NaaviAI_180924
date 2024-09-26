@@ -279,7 +279,7 @@
         font-size: 18px;
     }
     .theme-inner-banner .intro-title {
-        font-size: 38px;
+        font-size: 30px;
         margin: 0;
     }
     .theme-inner-banner .page-breadcrumb li {
@@ -776,11 +776,14 @@
     }
     .error-page-content h2 {
         font-size: 30px;
+        padding-bottom: 10px;
     }
     .error-page-content p {
-        font-size: 17px;
+        font-size: 18px;
         line-height: 32px;
-        padding: 8px 0 15px;
+        padding-bottom: 5px;
+        padding-left: 20px;
+        // text-align: justify;
     }
     .fancy-short-banner-five h3 {
         font-size: 28px;

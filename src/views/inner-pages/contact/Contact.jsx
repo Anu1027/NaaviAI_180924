@@ -1,5 +1,5 @@
-import React, {Fragment} from 'react';
-import {Helmet} from 'react-helmet';
+import React, { Fragment } from 'react';
+import { Helmet } from 'react-helmet';
 
 import TopNavFour from '../../../components/header/TopNavFour';
 import InnerBanner from '../../../components/page-title/InnerBanner';
@@ -9,28 +9,29 @@ import FooterFour from '../../../components/footer/FooterFour';
 import CopyRightFour from '../../../components/footer/CopyRightFour';
 import ContactThree from '../../../components/contact/ContactThree';
 import ContactForm from '../../../components/form/ContactForm';
+import MapComponent from '../../../components/form/MapComponent'; // Adjusted import
 
 const Contact = () => {
     return (
         <Fragment>
             <div className="main-page-wrapper">
                 <Helmet>
-                    <title>Contact us || Sinco - Data Science & Analytics React Template</title>
+                    <title>Contact us || Naavi - Find The Path To Your Next Goal</title>
                 </Helmet>
-                {/* helmet end */}
 
-                <TopNavFour/> {/* theme-menu-four */}
+                <TopNavFour /> {/* theme-menu-four */}
 
+                {/* Retain the "Get in Touch" heading, but hide the breadcrumb */}
                 <div className="theme-inner-banner">
-                    <InnerBanner intro="Get in Touch" currpage="Contact"/>
-                    <img src="images/shape/shape_38.svg" alt="" className="shapes shape-one"/>
-                    <img src="images/shape/shape_39.svg" alt="" className="shapes shape-two"/>
+                    <div className="container">
+                        <h2 className="intro-title text-center">Get in Touch</h2>
+                    </div>
                 </div>
-                {/* /.theme-inner-banner */}
 
+                {/* Contact Section */}
                 <div className="contact-section-one mb-170 lg-mb-120">
                     <div className="container">
-                        <ContactThree/>
+                        <ContactThree />
                     </div>
                     <div className="mt-100 lg-mt-70">
                         <div className="container">
@@ -38,42 +39,41 @@ const Contact = () => {
                                 <div className="col-lg-6 d-flex order-lg-last">
                                     <div className="form-style-one">
                                         <h3 className="form-title pb-40 lg-pb-20">Send Message.</h3>
-                                        <ContactForm/>
+                                        <ContactForm />
                                     </div>
-                                    {/* /.form-style-one */}
                                 </div>
                                 <div className="col-lg-6 d-flex order-lg-first">
                                     <div className="map-area-one mt-10 me-lg-4 md-mt-50">
-                                        <div className="mapouter">
-                                            <iframe
-                                                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7292.882391085675!2d90.37429724010617!3d23.944834037065423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1652150281517!5m2!1sen!2sbd"
-                                                style={{
-                                                border: 0
-                                            }}
-                                                allowFullScreen
-                                                loading="lazy"
-                                                referrerPolicy="no-referrer-when-downgrade"/>
-                                        </div>
+                                        <MapComponent />
                                     </div>
-                                    {/* /.map-area-one */}
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                {/* /.contact-section-one */}
 
+                {/* Move breadcrumb section below the contact form */}
+                <div className="contact-breadcrumb-wrapper">
+                    <div className="container">
+                    <ul className="contact-page-breadcrumb d-flex justify-content-center">
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+                        <li className="current-page">Contact</li>
+                    </ul>
+                    </div>
+                </div>
+
+                {/* Short Banner */}
                 <div className="fancy-short-banner-five">
                     <div className="container">
                         <div className="bg-wrapper">
-                            <BannerFive/>
+                            <BannerFive />
                         </div>
-                        {/* /.bg-wrapper */}
                     </div>
-                    {/* /.container */}
                 </div>
-                {/* /.fancy-short-banner-five */}
 
+                {/* Footer */}
                 <div className="footer-style-four space-fix-one theme-basic-footer">
                     <div className="container">
                         <div className="inner-wrapper">
@@ -83,31 +83,25 @@ const Contact = () => {
                                         <div className="title-style-four sm-pb-20">
                                             <h4 className="main-title">Join Our <span>Newsletter</span> &amp; Get updated.</h4>
                                         </div>
-                                        {/* /.title-style-four */}
                                     </div>
                                     <div className="col-md-6">
                                         <div className="subscribe-form">
-                                            <NewsLetterForm/>
+                                            <NewsLetterForm />
                                             <p>We only send interesting and relevant emails.</p>
                                         </div>
-                                        {/* /.subscribe-form */}
                                     </div>
                                 </div>
                             </div>
-                            {/* /.subscribe-area */}
-                            <FooterFour/>
+                            <FooterFour />
                             <div className="bottom-footer">
-                                <CopyRightFour/>
+                                <CopyRightFour />
                             </div>
                         </div>
-                        {/* /.inner-wrapper */}
                     </div>
                 </div>
-                {/* /.footer-style-four */}
-
             </div>
         </Fragment>
-    )
-}
+    );
+};
 
-export default Contact
+export default Contact;

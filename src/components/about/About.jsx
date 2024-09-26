@@ -17,9 +17,9 @@ const About = () => {
                                 <p className="pt-20 pb-25 lg-pb-20">AI technology is perfect for best business
                                     solutions &amp; we offer help to achieve your goals.</p>
                                 <ul className="style-none list-item color-rev">
-                                    <li>Various analysis options.</li>
-                                    <li>Page Load (time, size, number of requests).</li>
-                                    <li>Advance Data analysis operation.</li>
+                                    <li>Personalized Pathway Insights</li>
+                                    <li>Real-Time Progress Tracking</li>
+                                    <li>Data-Driven Goal Optimization</li>
                                 </ul>
                                 {/* <a href="about-us2.html" className="btn-eight mt-50 lg-mt-30">More about us</a> */}
                             </div>

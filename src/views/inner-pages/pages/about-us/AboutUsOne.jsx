@@ -220,7 +220,7 @@ const AboutUsOne = () => {
                                         <a href="contact-us.html">Contact Us</a>
                                     </li>
                                 </ul>
-                                <p className="copyright text-center order-lg-0 pb-15">Copyright @2022 sinco inc.</p>
+                                <p className="copyright text-center order-lg-0 pb-15">Copyright @2022 naavi inc.</p>
                             </div>
                         </div>
                     </div>
