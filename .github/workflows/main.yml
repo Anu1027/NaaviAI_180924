@@ -1,0 +1,26 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main  # Trigger on the 'main' branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2
+
+    - name: Set up SSH
+      uses: webfactory/ssh-agent@v0.5.3
+      with:
+        ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}  # Make sure your SSH key is stored in GitHub secrets
+
+    - name: Deploy to AWS Ubuntu Instance
+      run: |
+        ssh -o StrictHostKeyChecking=no ubuntu@52.66.213.65 << 'EOF'
+          cd /home/ubuntu/NaaviAI_180924  # Path to your project directory
+          ./deploy.sh
+        EOF
