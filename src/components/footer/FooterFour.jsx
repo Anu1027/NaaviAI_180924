@@ -4,14 +4,11 @@ import Naavi from '../../assets/images/logo/logo_01.png'
 
 const SocialContent = [
     {
-        icon: 'fab fa-facebook-f',
-        routerPath: '#'
-    }, {
-        icon: 'fab fa-twitter',
-        routerPath: '#'
+        icon: 'fab fa-instagram', // Instagram icon
+        routerPath: 'https://www.instagram.com/naavinetwork/', // Instagram profile URL
     }, {
         icon: 'fab fa-linkedin-in',
-        routerPath: '#'
+        routerPath: 'https://www.linkedin.com/company/naavi-network/?originalSubdomain=in', // LinkedIn profile URL
     }
 ];
 const PageContent = [
@@ -30,35 +27,17 @@ const PageContent = [
     }
 ];
 const ServiceContent = [
-    {
-        name: 'Artificial Intelligence',
-        routerPath: '/service-details'
-    }, {
-        name: 'Data Analytics',
-        routerPath: '/service-details'
-    }, {
-        name: 'Data Visualization',
-        routerPath: '/service-details'
-    }, {
-        name: 'Deep Learning',
-        routerPath: '/service-details'
-    }, {
-        name: 'Statistical Modeling',
-        routerPath: '/service-details'
-    }
+    // Your service contents (commented out for now)
 ];
 const LegalContent = [
     {
-        name: 'Terms of use',
+        name: 'Terms and Conditions',
         routerPath: '/faq'
     }, {
-        name: 'Terms &amp; conditions',
+        name: 'Privacy Policy',
         routerPath: '/faq'
     }, {
-        name: 'Privacy policy',
-        routerPath: '/faq'
-    }, {
-        name: 'Cookie policy',
+        name: 'Cancellation Policy',
         routerPath: '/faq'
     }
 ];
@@ -75,7 +54,9 @@ const FooterFour = () => {
                     <ul className="d-flex social-icon style-none">
                         {SocialContent.map((val, i) => (
                             <li key={i}>
-                                <a href={val.routerPath}><i className={val.icon}/></a>
+                                <a href={val.routerPath} target="_blank" rel="noopener noreferrer">
+                                    <i className={val.icon}/>
+                                </a>
                             </li>
                         ))}
                     </ul>
@@ -90,24 +71,13 @@ const FooterFour = () => {
                         ))}
                     </ul>
                 </div>
-                <div className="col-lg-3 col-sm-4 mb-30">
-                    <h5 className="footer-title">Services</h5>
-                    <ul className="footer-nav-link style-none">
-                        {ServiceContent.map((val, i) => (
-                            <li key={i}>
-                            <Link to={val.routerPath}>{val.name}</Link>
-                        </li>
-                        ))}
-                       
-                    </ul>
-                </div>
                 <div className="col-xl-2 col-lg-3 col-sm-4 mb-30">
                     <h5 className="footer-title">Legal</h5>
                     <ul className="footer-nav-link style-none">
                         {LegalContent.map((val, i) => (
                             <li key={i}>
-                            <Link to={val.routerPath}>{val.name}</Link>
-                        </li>
+                                <Link to={val.routerPath}>{val.name}</Link>
+                            </li>
                         ))}
                     </ul>
                 </div>
@@ -116,4 +86,4 @@ const FooterFour = () => {
     )
 }
 
-export default FooterFour
+export default FooterFour;
