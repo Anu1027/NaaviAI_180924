@@ -55,16 +55,16 @@ const NotFound = () => {
         </div>
       </div>
 
-      <div className="fancy-short-banner-five position-relative bottom-transform">
+      {/* <div className="fancy-short-banner-five position-relative bottom-transform">
                     <div className="container">
                         <div className="bg-wrapper">
                             <BannerOne/>
                         </div>
-                        {/* /.bg-wrapper */}
+                        /.bg-wrapper
                     </div>
-                    {/* /.container */}
+                    /.container
                 </div>
-                {/* /.fancy-short-banner-one */}
+                /.fancy-short-banner-one */}
 
                 <div className="footer-style-four space-fix-one theme-basic-footer">
                     <div className="container">

@@ -65,13 +65,13 @@ const Contact = () => {
                 </div>
 
                 {/* Short Banner */}
-                <div className="fancy-short-banner-five">
+                {/* <div className="fancy-short-banner-five">
                     <div className="container">
                         <div className="bg-wrapper">
                             <BannerFive />
                         </div>
                     </div>
-                </div>
+                </div> */}
 
                 {/* Footer */}
                 <div className="footer-style-four space-fix-one theme-basic-footer">

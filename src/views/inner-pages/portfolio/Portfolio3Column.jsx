@@ -56,13 +56,13 @@ const Portfolio3Column = () => {
                     </div>
                 </div>
 
-                <div className="fancy-short-banner-five position-relative bottom-transform">
+                {/* <div className="fancy-short-banner-five position-relative bottom-transform">
                     <div className="container">
                         <div className="bg-wrapper">
                             <BannerOne />
                         </div>
                     </div>
-                </div>
+                </div> */}
 
                 <div className="footer-style-four space-fix-one theme-basic-footer">
                     <div className="container">
