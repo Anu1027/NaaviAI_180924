@@ -9,7 +9,7 @@ const HeroBannerFive = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-xxl-6 col-md-7">
-                            <h1 className="hero-heading">Find Your Education<span> Pathway . </span></h1>
+                            <h1 className="hero-heading">Find Your Education<span> Pathway</span></h1>
                             <p className="text-lg mb-50 pt-40 pe-xl-5 md-pt-30 md-mb-40">Naavi is your partner in finding the perfect education path, designed for your unique career goals.</p>
                             <ul className="style-none button-group d-flex align-items-center">
                                 {/* Button to open the chatbot in a new tab */}

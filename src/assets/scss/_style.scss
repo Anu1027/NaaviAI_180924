@@ -3989,6 +3989,18 @@ body .btn-eight:hover {
 .block-style-twelve .more-btn:hover {
     transform: scale(1.1);
 }
+
+//llm and kgs heading styles in features
+
+.custom-feature-title {
+    font-family: "gorditamedium";  /* Same font family */
+    font-size: 25px;               /* Same font size */
+    color: var(--heading);         /* Same color */
+    margin: 30px 0 8px;            /* Same margin as before */
+    text-decoration: none;         /* Ensures no underline */
+    display: inline-block;         /* Inline-block to maintain spacing */
+}
+
 /*^^^^^^^^^^^^^^^^^^^^^ Feature Section Eighteen ^^^^^^^^^^^^^^^^^^^^^^^^*/
 .fancy-feature-eighteen {
     background: linear-gradient(180deg, rgba(248, 253, 255, 0) 0%, rgba(241, 252, 255, 0.51782) 48.22%, #f6fdff 100%);
@@ -4350,7 +4362,7 @@ body .btn-eight:hover {
     background: var(--prime-three);
 }
 .theme-basic-footer .subscribe-form form button:hover {
-    background: var(--prime-two);
+    background: var(--prime-one);
 }
 .theme-basic-footer .subscribe-form p {
     font-size: 15px;
@@ -5660,3 +5672,6 @@ body .btn-eight:hover {
     height: auto; /* Maintain aspect ratio */
     border-radius: 8px; /* Optional: add rounded corners */
 }
+
+
+

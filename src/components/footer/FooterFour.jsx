@@ -48,7 +48,7 @@ const FooterFour = () => {
             <div className="row">
                 <div className="col-lg-4 footer-intro mb-40">
                     <div className="logo">
-                        <Link to="/" className="d-block"><img src={Naavi} alt="" width={120}/></Link> 
+                        <Link to="/" className="d-block"><img src={Naavi} alt="" width={120} className="custom-logo" /></Link> 
                     </div>
                     <p>In this class, you will learn about the Guiding students on their educational journeys by creating personalized pathways to success, utilizing advanced AI technologies like LLMs and knowledge graphs.</p>
                     <ul className="d-flex social-icon style-none">
@@ -72,7 +72,7 @@ const FooterFour = () => {
                     </ul>
                 </div>
                 <div className="col-xl-2 col-lg-3 col-sm-4 mb-30">
-                    <h5 className="footer-title">Legal</h5>
+                    {/* <h5 className="footer-title">Legal</h5> */}
                     <ul className="footer-nav-link style-none">
                         {LegalContent.map((val, i) => (
                             <li key={i}>

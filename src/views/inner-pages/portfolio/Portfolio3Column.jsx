@@ -15,7 +15,7 @@ const Portfolio3Column = () => {
         <Fragment>
             <div className="main-page-wrapper portfolio-page">
                 <Helmet>
-                    <title>Solution || Naavi - Find The Path To Your Next Goal</title>
+                    <title>Solution || Naavi - Navigate Your Passion</title>
                 </Helmet>
 
                 <TopNavFour />

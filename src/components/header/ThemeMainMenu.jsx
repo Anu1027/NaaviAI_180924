@@ -1,6 +1,8 @@
 import React, { Fragment } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import Naavi from '../../assets/images/logo/logo_01.png'
+import Naavi from '../../assets/images/logo/logo_01.png';
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
+
 
 const AboutMenu = [
     {
@@ -101,9 +103,18 @@ const ThemeMainMenu = () => {
                 <li className={`nav-item ${location.pathname.startsWith('/portfolio') ? 'active' : ''}`}>
                     <Link className="nav-link" to="/solution">Solution</Link>
                 </li>
-                <li className={`nav-item ${location.pathname.startsWith('/blog') ? 'active' : ''}`}>
-                    <Link className="nav-link" to="/">Partners</Link>
+                <li className="nav-item">
+                    <ScrollLink
+                        to="partners-section"   // The ID of the section to scroll to
+                        smooth={true}           // Smooth scrolling
+                        offset={-70}            // Adjust the offset to match your header height
+                        duration={500}          // Duration of the scroll in milliseconds
+                        className="nav-link"
+                    >
+                        Partners
+                    </ScrollLink>
                 </li>
+
                 <li className="nav-item">
                     <Link className="nav-link" to="/contact" role="button">Contact</Link>
                 </li>

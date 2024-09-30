@@ -34,9 +34,9 @@ const TopNavTwo = () => {
                     <div className="top-header">
                         <div className="container">
                             <div className="d-flex align-items-center justify-content-between">
-                                <div className="call-button">Call us
+                                {/* <div className="call-button">Call us
                                     <a href="#">+49 17686765221</a>
-                                </div>
+                                </div> */}
                                 <div className="right-widget d-flex align-items-center">
                                     <div className="lang-dropdown me-3 me-sm-4">
                                         <button

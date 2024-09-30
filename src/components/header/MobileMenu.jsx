@@ -9,6 +9,7 @@ import {
 } from 'react-pro-sidebar';
 import 'react-pro-sidebar/dist/css/styles.css';
 import Naavi from '../../assets/images/logo/naavimobilelogo.jpg';
+import { Link as ScrollLink } from 'react-scroll'; // Import react-scroll
 
 const MobileMenu = () => {
     const [click, setClick] = useState(false);
@@ -41,19 +42,28 @@ const MobileMenu = () => {
                     </SidebarHeader>
                     <SidebarContent>
                         <Menu iconShape="square">
-                            <MenuItem className={location.pathname === '/' ? 'active' : ''}>
+                            <MenuItem className={location.pathname === '/' ? 'active' : ''} className="nav-link">
                                 <Link to="/" onClick={handleClick}>Home</Link>
                             </MenuItem>
-                            <MenuItem className={location.pathname.startsWith('/Problem') ? 'active' : ''}>
+                            <MenuItem className={location.pathname.startsWith('/problem') ? 'active' : ''} className="nav-link">
                                 <Link to="/problem" onClick={handleClick}>Problem</Link>
                             </MenuItem>
-                            <MenuItem className={location.pathname.startsWith('/Solution') ? 'active' : ''}>
+                            <MenuItem className={location.pathname.startsWith('/solution') ? 'active' : ''} className="nav-link">
                                 <Link to="/solution" onClick={handleClick}>Solution</Link>
                             </MenuItem>
-                            <MenuItem className={location.pathname.startsWith('/Partners') ? 'active' : ''}>
-                                <Link to="" onClick={handleClick}>Partners</Link>
+                            <MenuItem className="nav-link"> {/* Ensure uniformity in class */}
+                                {/* Use ScrollLink for smooth scrolling to the partners section */}
+                                <ScrollLink
+                                    to="partners-section"  // ID of the partners section
+                                    smooth={true}           // Enable smooth scrolling
+                                    offset={-70}            // Adjust offset if necessary for the header height
+                                    duration={500}          // Scroll duration in milliseconds
+                                    onClick={handleClick}    // Close the mobile menu after clicking
+                                >
+                                    Partners
+                                </ScrollLink>
                             </MenuItem>
-                            <MenuItem className={location.pathname === '/Contact' ? 'active' : ''}>
+                            <MenuItem className={location.pathname === '/contact' ? 'active' : ''} className="nav-link">
                                 <Link to="/contact" onClick={handleClick}>Contact</Link>
                             </MenuItem>
                         </Menu>

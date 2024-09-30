@@ -16,7 +16,7 @@ const Contact = () => {
         <Fragment>
             <div className="main-page-wrapper">
                 <Helmet>
-                    <title>Contact us || Naavi - Find The Path To Your Next Goal</title>
+                    <title>Contact us || Naavi - Navigate Your Passion</title>
                 </Helmet>
 
                 <TopNavFour /> {/* theme-menu-four */}

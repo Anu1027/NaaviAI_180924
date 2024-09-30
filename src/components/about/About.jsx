@@ -10,7 +10,7 @@ const About = () => {
                         <div className="col-xl-5 col-lg-6 col-md-7 ms-auto">
                             <div className="block-style-two" data-aos="fade-left">
                                 <div className="title-style-three">
-                                    <div className="sc-title">Over 150k+ Client</div>
+                                    <div className="sc-title">Age Group 14 to 50+</div>
                                     <h2 className="main-title">Target <span>Audience</span> for Naavi</h2>
                                 </div>
                                 {/* /.title-style-three */}

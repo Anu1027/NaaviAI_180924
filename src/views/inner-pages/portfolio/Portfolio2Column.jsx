@@ -15,7 +15,7 @@ const Portfolio2Column = () => {
         <Fragment>
             <div className="main-page-wrapper">
                 <Helmet>
-                    <title>Solution|| Naavi - Find The Path To Your Next Goal</title>
+                    <title>Solution|| Naavi - Navigate Your Passion</title>
                 </Helmet>
                 {/* helmet end */}
 

@@ -8,7 +8,7 @@ const Error = () => {
     return (
         <div className="main-page-wrapper">
             <Helmet>
-                <title>Problem || Naavi - Find The Path To Your Next Goal</title>
+                <title>Problem || Naavi - Navigate Your Passion</title>
             </Helmet>
             {/* helmet end */}
 

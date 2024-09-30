@@ -25,7 +25,7 @@ const UserAnalysis = () => {
         <Fragment>
             <div className="main-page-wrapper">
                 <Helmet>
-                    <title>Naavi - Find The Path To Your Next Goal</title>
+                    <title>Naavi - Navigate Your Passion</title>
                 </Helmet>
                 {/* helmet end */}
 
@@ -42,7 +42,7 @@ const UserAnalysis = () => {
                             <div className="col-xl-6 col-lg-5" data-aos="fade-right">
                                 <div className="title-style-three text-center text-lg-start">
                                     <h2 className="main-title">
-                                        <span>Services</span> We Provide with Quality.</h2>
+                                        <span>Services</span> We Provide with Quality</h2>
                                 </div>
                                 {/* /.title-style-three */}
                             </div>

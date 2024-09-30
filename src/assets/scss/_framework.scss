@@ -19,15 +19,31 @@ a:visited {
 
 //partners images
 .brand-logo-img {
-    width: 100%;  /* Adjust the width as needed */
-    height: 100%;  /* Maintain aspect ratio */
+    width: 170%;  /* Adjust the width as needed */
+    height: 170%;  /* Maintain aspect ratio */
 }
+
+.partners-heading {
+    font-size: 2.5rem; // Make the heading large
+    font-weight: 700; // Bold font
+    text-align: center; // Center text
+    margin-bottom: 40px; // Space below the heading
+    color: #2c7cb2; // Darker text color
+  }
 
 img {
     max-width: 100%;
     // padding-right: 80px;
     display: block;
 }
+
+//footer img styles
+
+.custom-logo {
+    width: 50%;  // Set your desired width here
+    height: auto;  // Maintain aspect ratio
+  }
+  
 
 //problem page styles
 .error-page-content .page-breadcrumb{

@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTwitter, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faTwitter, faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 
 const ContactThree = () => {
@@ -49,13 +49,13 @@ const ContactThree = () => {
                         <h5 className="title">Follow Us</h5>
                         <p> Stay connected with us </p>
                         <p className="social-links">
-                            <a href="https://twitter.com/adyti_369" target="_blank" rel="noopener noreferrer">
+                            {/* <a href="https://twitter.com/adyti_369" target="_blank" rel="noopener noreferrer">
                                 <FontAwesomeIcon icon={faTwitter} style={{ color: "#47b4d5", fontSize: "24px" }} />
+                            </a> */}
+                            <a href="https://www.instagram.com/naavinetwork/" target="_blank" rel="noopener noreferrer">
+                                <FontAwesomeIcon icon={faInstagram} style={{ color: "#47b4d5", fontSize: "24px" }} />
                             </a>
-                            <a href="https://github.com/adytiaa/" target="_blank" rel="noopener noreferrer">
-                                <FontAwesomeIcon icon={faGithub} style={{ color: "#47b4d5", fontSize: "24px" }} />
-                            </a>
-                            <a href="https://www.linkedin.com/in/aditya-as-83a301278/" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.linkedin.com/company/naavi-network/?originalSubdomain=in" target="_blank" rel="noopener noreferrer">
                                 <FontAwesomeIcon icon={faLinkedin} style={{ color: "#47b4d5", fontSize: "24px" }} />
                             </a>
                         </p>

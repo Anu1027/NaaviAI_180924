@@ -41,15 +41,15 @@ const TopNavFour = () => {
                             <Link to="/" className="d-block"><img src={Naavi} alt="" width={150}/></Link>
                         </div>
                         <div className="right-widget d-flex align-items-center ms-auto order-lg-3">
-                            <div className="call-button d-none d-xl-block me-5">Call us
+                            {/* <div className="call-button d-none d-xl-block me-5">Call us
                                 <a href="#">+49 17686765221</a>
-                            </div>
-                            <button
+                            </div> */}
+                            {/* <button
                                 className="menu-search-btn tran3s"
-                                type="button" onClick={openModal}><i className="bi bi-search"/></button>
+                                type="button" onClick={openModal}><i className="bi bi-search"/></button> */}
                                 
                                 
-                            <Link to="/contact" className="send-msg-btn tran3s d-none d-lg-block">Send us Message</Link>
+                            <Link to="/contact" className="send-msg-btn tran3s d-none d-lg-block">Send Message</Link>
                         </div>
                         {/* /.right-widget */}
                         <nav className="navbar navbar-expand-lg order-lg-2">
@@ -59,10 +59,10 @@ const TopNavFour = () => {
                                 <div className="mobile-content d-block d-lg-none">
                                     <div
                                         className="d-flex flex-column align-items-center justify-content-center mt-70">
-                                        <a href="contact-us.html" className="send-msg-btn tran3s mb-10">Send us Message</a>
-                                        <div className="call-button">Call us
+                                        <a href="contact-us.html" className="send-msg-btn tran3s mb-10">Send Message</a>
+                                        {/* <div className="call-button">Call us
                                             <a href="#">+49 17686765221</a>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
                                 {/* /.mobile-content */}
