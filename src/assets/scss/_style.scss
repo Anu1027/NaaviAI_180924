@@ -3875,15 +3875,54 @@ body .btn-eight:hover {
     text-decoration: underline;
     text-decoration-thickness: 5px;
 }
-.hero-banner-five .demo-btn {
-    font-family: "gorditamedium";
-    font-size: 20px;
-    color: var(--prime-three);
-    line-height: 55px;
-    border-radius: 25px;
-    background: rgba(145, 59, 255, 0.14);
-    padding: 0 30px;
+
+//problem page styles 
+
+.hero-banner-five {
+    position: relative;
+    z-index: 2;
+    padding: 220px 0 100px;
+    background: linear-gradient(0deg, rgba(248, 253, 255, 0) 0%, rgba(241, 252, 255, 0.51782) 48.22%, #f6fdff 100%);
 }
+
+.problempage-image {
+    width: 90%;
+    height: 70%;
+    padding-left: 100px;
+
+    @media (max-width: 1200px) {
+        width: 85%; 
+        padding-left: 50px;
+    }
+
+    @media (max-width: 768px) {
+        width: 100%; 
+        padding-left: 0;
+    }
+
+    @media (max-width: 480px) {
+        width: 100%; 
+        height: auto;
+        padding-left: 0;
+    }
+}
+
+.hero-banner-five .custom-card-problempage p {
+    font-size: 20px;
+}
+
+.hero-banner-five .hero-heading-problempage {
+    font-family: "gorditamedium";
+    font-size: 55px;
+    line-height: 1.17em;
+}
+
+.hero-banner-five .hero-heading-problempage span {
+    color: var(--prime-three);
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+}
+
 .hero-banner-five .demo-btn:hover {
     background: var(--prime-one);
     color: #fff;

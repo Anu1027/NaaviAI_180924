@@ -1,9 +1,10 @@
-import React, { Fragment } from 'react'; 
+import React, { Fragment, useEffect } from 'react'; 
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import TopNavFour from '../../../components/header/TopNavFour';
-import BannerOne from '../../../components/short-banner/BannerOne';
 import FooterFour from '../../../components/footer/FooterFour';
 import CopyRightFour from '../../../components/footer/CopyRightFour';
 import NewsLetterForm from '../../../components/form/NewsLetterForm';
@@ -11,6 +12,10 @@ import NewsLetterForm from '../../../components/form/NewsLetterForm';
 import SolutionImage from '../../../assets/images/assets/solution.png';
 
 const Portfolio3Column = () => {
+    useEffect(() => {
+        AOS.init({ duration: 1200, easing: 'ease' });
+    }, []);
+
     return (
         <Fragment>
             <div className="main-page-wrapper portfolio-page">
@@ -20,63 +25,56 @@ const Portfolio3Column = () => {
 
                 <TopNavFour />
 
-                <div className="theme-inner-banner portfolio-banner">
+                {/* Main Banner */}
+                <div className="theme-inner-banner portfolio-banner d-flex align-items-center justify-content-center">
                     <div className="container">
-                        <h2 className="intro-title">LLMs-Synergised with Knowledge Graphs (KGs)</h2>
-
-                        {/* Flex container for text and image */}
-                        <div className="portfolio-content d-flex flex-column flex-md-row align-items-center mt-4">
-                            {/* Text Content */}
-                            <div className="text-content portfolio-text mb-4 mb-md-0" style={{ flex: '1' }}>
-                                <p>
+                        <div className="row align-items-center">
+                            {/* Left Column (Text Content) */}
+                            <div className="col-md-6 portfolio-text" data-aos="fade-right">
+                                <h2 className="portfolio-heading">
+                                    LLMs-Synergised with <span className="highlighted-word">Knowledge Graphs</span>
+                                </h2>
+                                <p className="portfolio-paragraph">
                                     AI-based approach to education counseling, which is personalised, where school students provide information in levels:
                                 </p>
-                                <ul>
-                                    <li> Basic information (location, type of school)</li>
-                                    <li> Academic performances (grades, interests, aspirations)</li>
-                                    <li> Psychometric analysis & Extracurricular activities</li>
+                                <ul className="portfolio-list">
+                                    <li className="portfolio-list-item">Basic information (location, type of school)</li>
+                                    <li className="portfolio-list-item">Academic performances (grades, interests, aspirations)</li>
+                                    <li className="portfolio-list-item">Psychometric analysis & Extracurricular activities</li>
                                 </ul>
-                                <p>
+                                {/* <p className="portfolio-paragraph-second">
                                     They are provided with interactive pathways, including macro and micro steps. Each decision unlocks new levels, progressively clarifying and defining their journey.
-                                </p>
+                                </p> */}
                             </div>
 
-                            {/* Image Section */}
-                            <div className="image-container portfolio-image" style={{ flex: '1', display: 'flex', justifyContent: 'center' }}>
-                                <img src={SolutionImage} alt="Solution" className="img-fluid" />
+                            {/* Right Column (Image Section) */}
+                            <div className="col-md-6 text-center portfolio-image-container" data-aos="fade-left">
+                                <img src={SolutionImage} alt="Solution" className="portfolio-image img-fluid" />
                             </div>
                         </div>
-                        {/* End of side-by-side layout */}
 
-                        {/* Breadcrumbs placed after the new content */}
-                        <ul className="page-breadcrumb style-none d-flex justify-content-center">
+                        {/* Breadcrumbs */}
+                        <ul className="page-breadcrumb style-none d-flex justify-content-center mt-4" data-aos="fade-up" data-aos-delay="800">
                             <li><Link to="/">Home</Link></li>
                             <li className="current-page">Solution</li>
                         </ul>
                     </div>
                 </div>
 
-                {/* <div className="fancy-short-banner-five position-relative bottom-transform">
-                    <div className="container">
-                        <div className="bg-wrapper">
-                            <BannerOne />
-                        </div>
-                    </div>
-                </div> */}
-
+                {/* Footer Section */}
                 <div className="footer-style-four space-fix-one theme-basic-footer">
                     <div className="container">
                         <div className="inner-wrapper">
                             <div className="subscribe-area">
                                 <div className="row align-items-center">
-                                    <div className="col-md-6">
+                                    <div className="col-md-6" data-aos="fade-right">
                                         <div className="title-style-four sm-pb-20">
                                             <h4 className="main-title">
                                                 Join Our <span>Newsletter</span> & Get updated.
                                             </h4>
                                         </div>
                                     </div>
-                                    <div className="col-md-6">
+                                    <div className="col-md-6" data-aos="fade-left">
                                         <div className="subscribe-form">
                                             <NewsLetterForm />
                                             <p>We only send interesting and relevant emails.</p>

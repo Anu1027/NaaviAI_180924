@@ -46,17 +46,17 @@ img {
   
 
 //problem page styles
-.error-page-content .page-breadcrumb{
+.page-breadcrumb{
     justify-content: center;
     margin: 50px -2px;
 }
-.error-page-content .page-breadcrumb li {
+.page-breadcrumb li {
     padding: 0 2px;
     font-size: 17px;
     color: #000f5c;
     position: relative;
 }
-.error-page-content .page-breadcrumb li:after {
+.page-breadcrumb li:after {
     content: "\f285";
     font-family: bootstrap-icons;
     display: inline-block;
@@ -64,16 +64,16 @@ img {
     padding-left: 6px;
     color: var(--prime-three);
 }
-.error-page-content .page-breadcrumb li a {
+.page-breadcrumb li a {
     color: #000f5c;
 }
-.error-page-content .page-breadcrumb li a:hover {
+.page-breadcrumb li a:hover {
     text-decoration: underline;
 }
-.error-page-content .page-breadcrumb li.current-page {
+.page-breadcrumb li.current-page {
     color: var(--prime-three);
 }
-.error-page-content .page-breadcrumb li.current-page:after {
+.page-breadcrumb li.current-page:after {
     display: none;
 }
 //problem page styles
@@ -103,49 +103,72 @@ textarea {
     padding-top: 10px;
 }
 
-.portfolio-text p {
-    text-align: justify;
-    hyphens: auto; /* Helps with text justification on small screens */
-    margin-left: 1.5rem !important;
-    
-}
+/* Portfolio3Column Styles */
 
-/* For consistent list alignment */
-.portfolio-text ul {
-    padding-left: 1.5rem; /* Adjust as needed */
-    margin: 1rem 0;
-}
-
-.portfolio-text ul li {
-    // text-align: justify;
-    margin-bottom: 0.5rem; /* Adjust the spacing between list items */
-    margin-left: 1rem;
-    // font-size: 16px;
-}
-/* Responsive Image Styling */
-.portfolio-image img {
-    max-width: 100%;
-    height: auto; /* Maintain aspect ratio */
-    display: block;
-    margin: 0 auto; /* Center the image */
-}
-
-@media (max-width: 768px) {
-    .portfolio-content {
-        flex-direction: column; /* Stack text and image vertically on small screens */
-    }
+/* Image Styling */
+.portfolio-image-container {
+    display: flex;
+    justify-content: center;
+    // padding-left: 100px;
+    padding-right: 0px;
 
     .portfolio-image {
-        margin-top: 20px; /* Add space between text and image in mobile view */
-    }
+        width: 100%;
+        height: 100%;
 
-    .portfolio-text, .portfolio-image {
-        width: 100%; /* Make sure both text and image take full width on mobile */
-    }
+        @media (max-width: 1200px) {
+            width: 85%; 
+            padding-left: 50px;
+        }
 
-    .portfolio-image img {
-        max-width: 100%; /* Reduce image size slightly on mobile for better spacing */
+        @media (max-width: 768px) {
+            width: 100%; 
+            padding-left: 0;
+        }
+
+        @media (max-width: 480px) {
+            width: 100%; 
+            height: auto;
+            padding-left: 0;
+        }
     }
+}
+
+/* Text Content Styling */
+.portfolio-heading {
+    font-family: "gorditamedium";
+    font-size: 50px;
+    line-height: 1.17em;
+}
+
+.portfolio-paragraph {
+    font-size: 20px;
+    // text-align: justify;
+}
+
+.portfolio-paragraph-second {
+    font-size: 20px;
+    text-align: justify;
+}
+
+
+/* List Styling */
+.portfolio-list {
+    list-style-type: none;
+    padding-left: 0;
+    padding-top: 20px;
+
+    .portfolio-list-item {
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+}
+
+/* Highlight the word 'Knowledge Graphs' */
+.portfolio-heading .highlighted-word {
+    color: var(--prime-three);
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
 }
 
 audio,
