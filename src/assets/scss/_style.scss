@@ -459,12 +459,12 @@ body .btn-one {
     font-size: 18px;
     text-transform: capitalize;
     color: #fff;
-    line-height: 55px;
-    border-radius: 7px;
+    line-height: 50px;
+    border-radius: 50px;
     letter-spacing: 0.6px;
-    padding: 0 45px;
+    padding: 0 40px;
     position: relative;
-    background: var(--prime-one);
+    background: var(--prime-three);
     z-index: 1;
     transition: all 0.3s ease-in-out;
 }
@@ -476,7 +476,7 @@ body .btn-one i {
     margin-left: 3px;
 }
 body .btn-one:hover {
-    background: var(--prime-two);
+    background: var(--prime-one);
 }
 body .btn-two {
     font-size: 17px;

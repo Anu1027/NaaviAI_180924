@@ -14,9 +14,10 @@ const HeroBannerFive = () => {
                             <ul className="style-none button-group d-flex align-items-center">
                                 {/* Button to open the chatbot in a new tab */}
                                 <li className="me-4">
-                                    <a href="https://generate.naavinetwork.ai" target="_blank" rel="noopener noreferrer" className="demo-btn ripple-btn tran3s">
-                                        Generate
-                                    </a>
+                                <a href="https://generate.naavinetwork.ai" target="_blank" rel="noopener noreferrer" className="ripple-btn btn-one">
+                                    Generate
+                                </a>
+
                                 </li>
                             </ul>
                         </div>

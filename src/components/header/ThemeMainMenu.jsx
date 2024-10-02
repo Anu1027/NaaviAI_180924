@@ -1,90 +1,23 @@
 import React, { Fragment } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom'; // Import useNavigate instead of useHistory
 import Naavi from '../../assets/images/logo/logo_01.png';
-import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
-
-
-const AboutMenu = [
-    {
-        name: 'About Us One',
-        routerPath: '/about-one'
-    },
-    {
-        name: 'About Us Two',
-        routerPath: '/about-two'
-    }
-];
-
-const ServiceMenu = [
-    {
-        name: 'Service One',
-        routerPath: '/service-one'
-    },
-    {
-        name: 'Service Two',
-        routerPath: '/service-two'
-    },
-    {
-        name: 'Service Details',
-        routerPath: '/service-details'
-    }
-];
-
-const TeamMenu = [
-    {
-        name: 'Team Member',
-        routerPath: '/team-member'
-    },
-    {
-        name: 'Team Details',
-        routerPath: '/team-details'
-    }
-];
-
-const BlogMenu = [
-    {
-        name: 'Grid Layout',
-        routerPath: '/blog-grid'
-    },
-    {
-        name: 'Grid With Sidebar',
-        routerPath: '/blog-sidebar'
-    },
-    {
-        name: 'Blog Masonry',
-        routerPath: '/blog-masonry'
-    },
-    {
-        name: 'Blog Standard',
-        routerPath: '/blog-standard'
-    },
-    {
-        name: 'Blog Details',
-        routerPath: '/blog-details'
-    }
-];
-
-const Miscellaneous = [
-    {
-        name: 'Testimonials',
-        routerPath: '/testimonial'
-    },
-    {
-        name: 'Our Pricing',
-        routerPath: '/price'
-    },
-    {
-        name: 'FAQ',
-        routerPath: '/faq'
-    },
-    {
-        name: '404 Error',
-        routerPath: '/error'
-    }
-];
 
 const ThemeMainMenu = () => {
-    const location = useLocation(); // Get the current location to handle active class
+    const location = useLocation();
+    const navigate = useNavigate(); // Use useNavigate for programmatic navigation
+
+    const handlePartnersClick = () => {
+        // Navigate to the homepage
+        navigate('/'); // Use navigate instead of history.push
+        
+        // Delay scrolling to allow the page to load
+        setTimeout(() => {
+            const partnersSection = document.getElementById('partners-section');
+            if (partnersSection) {
+                partnersSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }, 100); // Adjust timeout as necessary
+    };
 
     return (
         <Fragment>
@@ -103,18 +36,12 @@ const ThemeMainMenu = () => {
                 <li className={`nav-item ${location.pathname.startsWith('/portfolio') ? 'active' : ''}`}>
                     <Link className="nav-link" to="/solution">Solution</Link>
                 </li>
+                {/* Updated Partners Link */}
                 <li className="nav-item">
-                    <ScrollLink
-                        to="partners-section"   // The ID of the section to scroll to
-                        smooth={true}           // Smooth scrolling
-                        offset={-70}            // Adjust the offset to match your header height
-                        duration={500}          // Duration of the scroll in milliseconds
-                        className="nav-link"
-                    >
+                    <button onClick={handlePartnersClick} className="nav-link" style={{ background: 'none', border: 'none', cursor: 'pointer' }}>
                         Partners
-                    </ScrollLink>
+                    </button>
                 </li>
-
                 <li className="nav-item">
                     <Link className="nav-link" to="/contact" role="button">Contact</Link>
                 </li>
