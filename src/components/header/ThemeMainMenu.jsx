@@ -6,6 +6,14 @@ const ThemeMainMenu = () => {
     const location = useLocation();
     const navigate = useNavigate(); // Use useNavigate for programmatic navigation
 
+    const handleHomeClick = () => {
+        // Navigate to the homepage
+        navigate('/'); // Use navigate instead of history.push
+        
+        // Scroll to top of the page
+        window.scrollTo(0, 0);
+    };
+
     const handlePartnersClick = () => {
         // Navigate to the homepage
         navigate('/'); // Use navigate instead of history.push
@@ -19,6 +27,12 @@ const ThemeMainMenu = () => {
         }, 100); // Adjust timeout as necessary
     };
 
+    const handlePageNavigation = (path) => {
+        // Scroll to top of the page before navigating
+        window.scrollTo(0, 0);
+        navigate(path);
+    };
+
     return (
         <Fragment>
             <ul className="navbar-nav">
@@ -27,23 +41,46 @@ const ThemeMainMenu = () => {
                         <Link to="/"><img src={Naavi} alt="" width={130} /></Link>
                     </div>
                 </li>
+                {/* Updated Home Link */}
                 <li className={`nav-item ${location.pathname === '/' ? 'active' : ''}`}>
-                    <Link className="nav-link" to="/">Home</Link>
+                    <Link className="nav-link" to="/" onClick={handleHomeClick}>Home</Link>
                 </li>
-                <li className={`nav-item ${location.pathname.startsWith('/pages') ? 'active' : ''}`}>
-                    <Link className="nav-link" to="/problem">Problem</Link>
+                <li className={`nav-item ${location.pathname.startsWith('/problem') ? 'active' : ''}`}>
+                    <Link 
+                        className="nav-link" 
+                        to="/problem" 
+                        onClick={() => handlePageNavigation('/problem')}
+                    >
+                        Problem
+                    </Link>
                 </li>
-                <li className={`nav-item ${location.pathname.startsWith('/portfolio') ? 'active' : ''}`}>
-                    <Link className="nav-link" to="/solution">Solution</Link>
+                <li className={`nav-item ${location.pathname.startsWith('/solution') ? 'active' : ''}`}>
+                    <Link 
+                        className="nav-link" 
+                        to="/solution" 
+                        onClick={() => handlePageNavigation('/solution')}
+                    >
+                        Solution
+                    </Link>
                 </li>
                 {/* Updated Partners Link */}
                 <li className="nav-item">
-                    <button onClick={handlePartnersClick} className="nav-link" style={{ background: 'none', border: 'none', cursor: 'pointer' }}>
+                    <button 
+                        onClick={handlePartnersClick} 
+                        className="nav-link" 
+                        style={{ background: 'none', border: 'none', cursor: 'pointer' }}
+                    >
                         Partners
                     </button>
                 </li>
-                <li className="nav-item">
-                    <Link className="nav-link" to="/contact" role="button">Contact</Link>
+                <li className={`nav-item ${location.pathname === '/contact' ? 'active' : ''}`}>
+                    <Link 
+                        className="nav-link" 
+                        to="/contact" 
+                        onClick={() => handlePageNavigation('/contact')}
+                    >
+                        Contact
+                    </Link>
                 </li>
             </ul>
         </Fragment>

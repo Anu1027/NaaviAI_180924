@@ -1,5 +1,5 @@
 import React, { Fragment, useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import {
     ProSidebar,
     SidebarHeader,
@@ -9,14 +9,47 @@ import {
 } from 'react-pro-sidebar';
 import 'react-pro-sidebar/dist/css/styles.css';
 import Naavi from '../../assets/images/logo/naavimobilelogo.jpg';
-import { Link as ScrollLink } from 'react-scroll'; // Import react-scroll
 
 const MobileMenu = () => {
     const [click, setClick] = useState(false);
     const location = useLocation(); // Get the current location to handle active class
+    const navigate = useNavigate(); // Use useNavigate for programmatic navigation
 
     const handleClick = () => {
         setClick(!click);
+    };
+
+    const handleHomeClick = () => {
+        // Close the sidebar
+        setClick(false);
+        // Navigate to homepage
+        navigate('/');
+        // Scroll to top of the page
+        window.scrollTo(0, 0);
+    };
+
+    const handlePartnersClick = () => {
+        // Close the sidebar
+        setClick(false); // Close the sidebar
+
+        // Navigate to the homepage
+        navigate('/');
+
+        // Delay scrolling to allow the page to load
+        setTimeout(() => {
+            const partnersSection = document.getElementById('partners-section');
+            if (partnersSection) {
+                partnersSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }, 100); // Adjust timeout if necessary
+    };
+
+    const handlePageNavigation = (path) => {
+        // Close the sidebar
+        setClick(false);
+        // Scroll to top of the page before navigating
+        window.scrollTo(0, 0);
+        navigate(path);
     };
 
     return (
@@ -42,29 +75,42 @@ const MobileMenu = () => {
                     </SidebarHeader>
                     <SidebarContent>
                         <Menu iconShape="square">
+                            {/* Updated Home Link */}
                             <MenuItem className={location.pathname === '/' ? 'active' : ''} className="nav-link">
-                                <Link to="/" onClick={handleClick}>Home</Link>
+                                <Link to="/" onClick={handleHomeClick}>Home</Link>
                             </MenuItem>
                             <MenuItem className={location.pathname.startsWith('/problem') ? 'active' : ''} className="nav-link">
-                                <Link to="/problem" onClick={handleClick}>Problem</Link>
+                                <Link 
+                                    to="/problem" 
+                                    onClick={() => handlePageNavigation('/problem')}
+                                >
+                                    Problem
+                                </Link>
                             </MenuItem>
                             <MenuItem className={location.pathname.startsWith('/solution') ? 'active' : ''} className="nav-link">
-                                <Link to="/solution" onClick={handleClick}>Solution</Link>
+                                <Link 
+                                    to="/solution" 
+                                    onClick={() => handlePageNavigation('/solution')}
+                                >
+                                    Solution
+                                </Link>
                             </MenuItem>
-                            <MenuItem className="nav-link"> {/* Ensure uniformity in class */}
-                                {/* Use ScrollLink for smooth scrolling to the partners section */}
-                                <ScrollLink
-                                    to="partners-section"  // ID of the partners section
-                                    smooth={true}           // Enable smooth scrolling
-                                    offset={-70}            // Adjust offset if necessary for the header height
-                                    duration={500}          // Scroll duration in milliseconds
-                                    onClick={handleClick}    // Close the mobile menu after clicking
+                            {/* Updated Partners Menu Item */}
+                            <MenuItem className="nav-link">
+                                <button 
+                                    onClick={handlePartnersClick} 
+                                    style={{ background: 'none', border: 'none', cursor: 'pointer' }}
                                 >
                                     Partners
-                                </ScrollLink>
+                                </button>
                             </MenuItem>
                             <MenuItem className={location.pathname === '/contact' ? 'active' : ''} className="nav-link">
-                                <Link to="/contact" onClick={handleClick}>Contact</Link>
+                                <Link 
+                                    to="/contact" 
+                                    onClick={() => handlePageNavigation('/contact')}
+                                >
+                                    Contact
+                                </Link>
                             </MenuItem>
                         </Menu>
                     </SidebarContent>
