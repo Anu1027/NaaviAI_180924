@@ -1,5 +1,7 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
+import { useLocation } from 'react-router-dom';
+
 
 import TopNavFour from '../../../components/header/TopNavFour';
 import InnerBanner from '../../../components/page-title/InnerBanner';
@@ -12,6 +14,14 @@ import ContactForm from '../../../components/form/ContactForm';
 import MapComponent from '../../../components/form/MapComponent'; // Adjusted import
 
 const Contact = () => {
+    const location = useLocation();
+
+    useEffect(() => {
+        // Scroll to contact form section if hash matches
+        if (location.hash === '#contact-form-section') {
+            document.getElementById('contact-form-section').scrollIntoView({ behavior: 'smooth' });
+        }
+    }, [location]);
     return (
         <Fragment>
             <div className="main-page-wrapper">
@@ -37,7 +47,7 @@ const Contact = () => {
                         <div className="container">
                             <div className="row gx-xxl-5">
                                 <div className="col-lg-6 d-flex order-lg-last">
-                                    <div className="form-style-one">
+                                    <div className="form-style-one" id="contact-form-section">
                                         <h3 className="form-title pb-40 lg-pb-20">Send Message.</h3>
                                         <ContactForm />
                                     </div>
