@@ -1,8 +1,11 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 
 const ContactForm = () => {
     // New API endpoint URL for NoCodeAPI Google Sheets integration
     const sheetAPIURL = 'https://v1.nocodeapi.com/anuradha1024/google_sheets/hsjQKzADGrGfmBmC?tabId=Sheet1';
+
+    // State to manage success or error message
+    const [statusMessage, setStatusMessage] = useState('');
 
     // Handle form submission
     const handleSubmit = (e) => {
@@ -35,12 +38,12 @@ const ContactForm = () => {
             })
             .then(result => {
                 console.log('Success:', result); // Log the result from the fetch
-                alert('Form submitted successfully!');
+                setStatusMessage('Form submitted successfully!'); // Set success message
                 e.target.reset(); // Reset the form after submission
             })
             .catch(error => {
                 console.error('Error:', error); // Log any errors during submission
-                alert('Error submitting the form: ' + error.message);
+                setStatusMessage('Error submitting the form: ' + error.message); // Set error message
             });
     };
 
@@ -95,6 +98,15 @@ const ContactForm = () => {
                         <button type="submit" className="btn-eight ripple-btn">
                             Submit
                         </button>
+                    </div>
+
+                    {/* Status Message */}
+                    <div className="col-12">
+                        {statusMessage && (
+                            <p className={statusMessage.includes('successfully') ? 'text-success' : 'text-danger'}>
+                                {statusMessage}
+                            </p>
+                        )}
                     </div>
                 </div>
             </form>
