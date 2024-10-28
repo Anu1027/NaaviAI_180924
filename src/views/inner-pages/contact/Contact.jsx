@@ -2,26 +2,26 @@ import React, { Fragment, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { useLocation } from 'react-router-dom';
 
-
 import TopNavFour from '../../../components/header/TopNavFour';
 import InnerBanner from '../../../components/page-title/InnerBanner';
 import NewsLetterForm from '../../../components/form/NewsLetterForm';
-import BannerFive from '../../../components/short-banner/BannerFive';
 import FooterFour from '../../../components/footer/FooterFour';
 import CopyRightFour from '../../../components/footer/CopyRightFour';
 import ContactThree from '../../../components/contact/ContactThree';
 import ContactForm from '../../../components/form/ContactForm';
-import MapComponent from '../../../components/form/MapComponent'; // Adjusted import
+import MapComponent from '../../../components/form/MapComponent';
 
 const Contact = () => {
     const location = useLocation();
 
     useEffect(() => {
-        // Scroll to contact form section if hash matches
-        if (location.hash === '#contact-form-section') {
-            document.getElementById('contact-form-section').scrollIntoView({ behavior: 'smooth' });
+        // Check if query parameter is present and scroll to contact form section
+        const params = new URLSearchParams(location.search);
+        if (params.get('scrollToForm') === 'true') {
+            document.getElementById('contact-form-section')?.scrollIntoView({ behavior: 'smooth' });
         }
     }, [location]);
+
     return (
         <Fragment>
             <div className="main-page-wrapper">
@@ -29,9 +29,8 @@ const Contact = () => {
                     <title>Contact us || Naavi - Navigate Your Passion</title>
                 </Helmet>
 
-                <TopNavFour /> {/* theme-menu-four */}
+                <TopNavFour />
 
-                {/* Retain the "Get in Touch" heading, but hide the breadcrumb */}
                 <div className="theme-inner-banner">
                     <div className="container">
                         <h2 className="intro-title text-center">Get in Touch</h2>
@@ -62,28 +61,17 @@ const Contact = () => {
                     </div>
                 </div>
 
-                {/* Move breadcrumb section below the contact form */}
+                {/* Breadcrumb Section */}
                 <div className="contact-breadcrumb-wrapper">
                     <div className="container">
-                    <ul className="contact-page-breadcrumb d-flex justify-content-center">
-                        <li>
-                            <a href="/">Home</a>
-                        </li>
-                        <li className="current-page">Contact</li>
-                    </ul>
+                        <ul className="contact-page-breadcrumb d-flex justify-content-center">
+                            <li><a href="/">Home</a></li>
+                            <li className="current-page">Contact</li>
+                        </ul>
                     </div>
                 </div>
 
-                {/* Short Banner */}
-                {/* <div className="fancy-short-banner-five">
-                    <div className="container">
-                        <div className="bg-wrapper">
-                            <BannerFive />
-                        </div>
-                    </div>
-                </div> */}
-
-                {/* Footer */}
+                {/* Footer with Newsletter Section */}
                 <div className="footer-style-four space-fix-one theme-basic-footer">
                     <div className="container">
                         <div className="inner-wrapper">
