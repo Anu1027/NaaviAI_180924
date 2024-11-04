@@ -50,7 +50,7 @@ ul.style-none {
 
 #partners-section ul.style-none {
     display: flex;
-    // justify-content: center; /* Center logos horizontally */
+    justify-content: center; /* Center logos horizontally */
     gap: 100px; /* Adjust spacing between logos */
     flex-wrap: wrap; /* Allow wrapping on smaller screens */
     padding: 0; /* Remove any default padding */
