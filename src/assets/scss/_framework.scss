@@ -17,25 +17,87 @@ a:visited {
     outline: none;
 }
 
-//partners images
-.brand-logo-img {
-    width: 170%;  /* Adjust the width as needed */
-    height: 170%;  /* Maintain aspect ratio */
+/* Partners Section */
+#partners-section {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    min-height: 100vh; /* Set minimum height to full viewport height */
+    box-sizing: border-box;
 }
 
+/* Partners Heading */
 .partners-heading {
-    font-size: 2.5rem; // Make the heading large
-    font-weight: 700; // Bold font
-    text-align: center; // Center text
-    margin-bottom: 40px; // Space below the heading
-    color: #2c7cb2; // Darker text color
-  }
-
-img {
-    max-width: 100%;
-    // padding-right: 80px;
-    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    color: #2c7cb2;
 }
+
+/* Partner Logo Container */
+ul.style-none {
+    display: flex;
+    // justify-content: center; /* Center logos horizontally */
+    // gap: 100px; /* Adjust spacing between logos */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    padding: 0; /* Remove any default padding */
+    list-style: none; /* Remove bullets */
+}
+
+#partners-section ul.style-none {
+    display: flex;
+    // justify-content: center; /* Center logos horizontally */
+    gap: 100px; /* Adjust spacing between logos */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    padding: 0; /* Remove any default padding */
+    list-style: none; /* Remove bullets */
+}
+
+/* Circular Logo Style */
+.partner-logo-block-one {
+    width: 180px; /* Fixed circle size */
+    height: 180px; /* Fixed circle size */
+    border-radius: 50%; /* Make it circular */
+    overflow: hidden; /* Ensure overflow is hidden */
+    border: 2px solid #2c7cb2; /* Border color */
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    background-color: #fff; /* Background color for the logo container */
+    transition: transform 0.3s; /* Optional: Add smooth transition for hover effect */
+}
+
+// .partner-logo-block-one:hover {
+//     transform: scale(1.05); /* Optional: Slight zoom on hover */
+// }
+
+/* Logo Image Styling */
+.brand-logo-img {
+    width: 90%; /* Keep the image within the circle */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Contain ensures it fits without cropping */
+}
+
+/* Style for the DST logo to increase its size */
+.dst-logo {
+    width: 100%; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 170px; /* Example size, adjust as necessary */
+    object-fit: contain;
+}
+
+.thub {
+    width: 100%; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 140px; /* Example size, adjust as necessary */
+    object-fit: contain;
+
+}
+
 
 //footer img styles
 

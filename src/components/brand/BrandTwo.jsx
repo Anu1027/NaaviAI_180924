@@ -1,25 +1,33 @@
 import React, { Fragment } from 'react';
-import NvidiaLogo from '../../assets/images/logo/nvidia1.png'; // Import directly
-import ThubLogo from '../../assets/images/logo/thub.png'; // Import directly
-import DeptScienceLogo from '../../assets/images/logo/deptscience.png'; // Import directly
-import MathLogo from '../../assets/images/logo/math.png'; // Import directly
+import NvidiaLogo from '../../assets/images/logo/nvidia-inception-program.png';
+import ThubLogo from '../../assets/images/logo/t-hub-logo.png';
+import DeptScienceLogo from '../../assets/images/logo/dst-logo1.jpg';
+import MathLogo from '../../assets/images/logo/AIScaleUp.png';
 
 const BrandLogo = [
     {
-        img: NvidiaLogo, // Use imported image
+        img: NvidiaLogo,
         dataDelay: '',
+        className: '',
+        link: 'https://www.nvidia.com/en-in/startups/', // Nvidia link
     },
     {
-        img: ThubLogo, // Use imported image
+        img: ThubLogo,
         dataDelay: '100',
+        className: 'thub',
+        link: 'https://t-hub.co/', // Thub link
     },
     {
-        img: DeptScienceLogo, // Use imported image
+        img: DeptScienceLogo,
         dataDelay: '200',
+        className: 'dst-logo',
+        link: 'https://dst.gov.in/', // DST link
     },
     {
-        img: MathLogo, // Use imported image
+        img: MathLogo,
         dataDelay: '300',
+        className: '',
+        link: 'https://www.mat-hub.ai/', // MATH AI Scale up link
     }
 ];
 
@@ -27,7 +35,7 @@ const BrandTwo = () => {
     return (
         <Fragment>
             <div id="partners-section">
-            <h2 className="partners-heading">Partners</h2> {/* Added heading */}
+                <h2 className="partners-heading">Partners</h2>
                 <ul className="style-none text-center mt-40 lg-mt-10">
                     {BrandLogo.map((item, i) => (
                         <li
@@ -35,11 +43,15 @@ const BrandTwo = () => {
                             className="partner-logo-block-one d-inline-block"
                             data-aos="fade-up"
                             data-aos-delay={item.dataDelay}>
-                            <a href="#" className="d-flex align-items-center justify-content-center">
+                            <a
+                                href={item.link} // Link to respective website
+                                target="_blank" // Open in a new tab
+                                rel="noopener noreferrer" // Security for external links
+                                className="d-flex align-items-center justify-content-center">
                                 <img
-                                    src={item.img}  // Directly reference imported image
+                                    src={item.img}
                                     alt={`Logo ${i + 1}`}
-                                    className="brand-logo-img"
+                                    className={`brand-logo-img ${item.className}`}
                                 />
                             </a>
                         </li>

@@ -5,7 +5,7 @@ const CopyRightFour = () => {
     return (
         <Fragment>
             <div className="d-lg-flex justify-content-between align-items-center">
-                <ul
+                {/* <ul
                     className="order-lg-1 pb-15 d-flex justify-content-center footer-nav style-none">
                     <li>
                         <Link to="/faq">Privacy &amp; Terms.</Link>
@@ -16,7 +16,7 @@ const CopyRightFour = () => {
                     <li>
                         <Link to="/contact">Contact Us</Link>
                     </li>
-                </ul>
+                </ul> */}
                 <p className="copyright text-center order-lg-0 pb-15">Copyright @{new Date().getFullYear()}{" "}
                     naavi inc.</p>
             </div>

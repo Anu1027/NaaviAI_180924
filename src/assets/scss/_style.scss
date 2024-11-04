@@ -1838,26 +1838,20 @@ body .btn-eight:hover {
 
 /*^^^^^^^^^^^^^^^^^^^^^ Partner Section One ^^^^^^^^^^^^^^^^^^^^^^^^*/
 .partner-section-one {
-    padding: 150px 0 200px;
-    margin-top: -70px;
+    padding: 100px 0; /* Adjusted for better top and bottom spacing */
     background: url(../images/assets/bg_04.svg) no-repeat center;
     background-size: cover;
 }
-.partner-logo-block-one {
-    margin: 50px 12px 0;
-    vertical-align: middle;
-}
+
 .partner-logo-block-one a {
-    height: 75px;
-    border-radius: 14px;
-    background: #fff;
-    padding: 0 38px;
-    box-shadow: 0px 25px 60px rgba(0, 106, 204, 0.05);
+    height: 100%; /* Fill the circular container */
+    border-radius: 50%; /* Match circular shape */
+    padding: 0;
+    background: none;
+    box-shadow: none;
     transition: all 0.3s ease-in-out;
 }
-.partner-logo-block-one a:hover {
-    transform: translateY(-5px);
-}
+
 .partner-section-two {
     position: relative;
     z-index: 3;
@@ -2066,6 +2060,15 @@ body .btn-eight:hover {
     line-height: 30px;
     margin: 15px 0 35px;
 }
+/* Social icon container */
+.theme-basic-footer .social-icon {
+    display: flex;
+    gap: 10px; /* Adjust the gap to match your design */
+    padding: 0;
+    list-style: none;
+}
+
+/* Existing social icon styles */
 .theme-basic-footer .social-icon a {
     width: 30px;
     height: 30px;
@@ -2078,19 +2081,37 @@ body .btn-eight:hover {
     margin-right: 10px;
     transition: all 0.3s ease-in-out;
 }
+
 .theme-basic-footer .social-icon a:hover {
     background: #738bae;
     color: #fff;
 }
-.theme-basic-footer .footer-nav-link a {
-    font-size: 17px;
+
+/* Footer-specific styles */
+.footer-nav {
+    display: block !important; /* Ensure block display */
+    padding: 0 !important; /* Remove padding */
+    margin: 0 !important; /* Remove margin */
+    list-style: none !important; /* Remove bullet points */
+}
+
+/* Optional: Adjust list item spacing */
+.footer-nav li {
+    margin-bottom: 10px; /* Adjust space between list items */
+}
+
+/* Footer link styles */
+.footer-nav-link a {
+    font-size: 17px; /* Match your design */
     line-height: 44px;
     color: var(--text-color);
     transition: all 0.2s ease-in-out;
 }
-.theme-basic-footer .footer-nav-link a:hover {
+
+.footer-nav-link a:hover {
     color: var(--prime-one);
 }
+
 .theme-basic-footer .newsletter p {
     font-size: 18px;
     padding: 0 0 22px;
@@ -2149,8 +2170,8 @@ body .btn-eight:hover {
 }
 .theme-basic-footer .bottom-footer {
     border-top: 1px solid #f2f7ff;
-    margin-top: 40px;
-    padding: 22px 0 7px;
+    // margin-top: 40px;
+    // padding: 22px 0 7px;
 }
 .theme-basic-footer .bottom-footer .copyright {
     font-size: 16px;
