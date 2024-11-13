@@ -24,7 +24,7 @@ const HeroBannerFive = () => {
                     </div>
                 </div>
                 <div className="illustration-holder">
-                    <img src="images/assets/ils_13.svg" alt="" className="main-illustration ms-auto" />
+                    <img src="images/assets/ils_13.svg" alt="" className="main-illustration ms-auto " />
                     <img src="images/assets/ils_13_1.svg" alt="" className="shapes shape-one" />
                     <img src="images/assets/ils_13_2.svg" alt="" className="shapes shape-two" data-aos="fade-down" />
                     <img src="images/assets/ils_13_2.svg" alt="" className="shapes shape-three" data-aos="fade-down" />
