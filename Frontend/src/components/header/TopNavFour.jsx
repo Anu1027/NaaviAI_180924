@@ -45,17 +45,24 @@ const TopNavFour = () => {
         <div className="inner-content">
           <div className="d-flex align-items-center">
             <div className="">
-              <Link to="/" className="d-block"><img src={Naavi} alt="" width={150} /></Link>
+              <Link to="/" className="d-block"><img src={Naavi} alt="" width={200} /></Link>
             </div>
             <div className="right-widget d-flex align-items-center ms-auto order-lg-3">
-              <button className="send-msg-btn tran3s d-none d-lg-block" onClick={handleSendMessage}>Send Message</button>
+             <button className="menu-icon-btn d-none d-lg-block" onClick={handleSendMessage}>
+    <span className="menu-icon-custom">
+      <span className="bar"></span>
+      <span className="bar"></span>
+      <span className="bar"></span>
+    </span>
+  </button>
+
             </div>
             <nav className="navbar navbar-expand-lg order-lg-2">
               <div className="collapse navbar-collapse" id="navbarNav">
                 <ThemeMainMenu />
                 <div className="mobile-content d-block d-lg-none">
                   <div className="d-flex flex-column align-items-center justify-content-center mt-70">
-                    <button className="send-msg-btn tran3s mb-10" onClick={handleSendMessage}>Send Message</button>
+                    <button className="send-msg-btn tran3s d-none d-lg-block" onClick={handleSendMessage}>Send Message</button>
                   </div>
                 </div>
               </div>

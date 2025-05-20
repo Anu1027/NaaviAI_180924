@@ -35,7 +35,7 @@ const ContactThree = () => {
                             Email us at
                             <br/>
                             <br />
-                            <a href="mailto:mail@naavi.network" className="webaddress">mail@naavi.network</a>
+                            <a href="mailto:info@naavinetwork.ai" className="webaddress">info@naavinetwork.ai</a>
                         </p>
                     </div>
                 </div>
