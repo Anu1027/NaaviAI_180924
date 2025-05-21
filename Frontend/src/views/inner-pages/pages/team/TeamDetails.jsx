@@ -5,8 +5,8 @@ import TopNavFour from '../../../../components/header/TopNavFour';
 import InnerBanner from '../../../../components/page-title/InnerBanner';
 import TeamDetailsOne from '../../../../components/team/TeamDetailsOne'
 import BannerFive from '../../../../components/short-banner/BannerFive';
-import FooterFour from '../../../../components/footer/FooterFour';
-import CopyRightFour from '../../../../components/footer/CopyRightFour';
+import Footer from '../../../../components/footernew/index';
+
 
 const TeamDetails = () => {
     return (
@@ -73,10 +73,8 @@ const TeamDetails = () => {
                                 </div>
                             </div>
                             {/* /.subscribe-area */}
-                            <FooterFour/>
-                            <div className="bottom-footer">
-                                <CopyRightFour/>
-                            </div>
+                            <Footer/>
+                            
                         </div>
                         {/* /.inner-wrapper */}
                     </div>

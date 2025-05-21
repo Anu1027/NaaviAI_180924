@@ -13,8 +13,7 @@ import TestimonialThree from '../../components/testimonial/TestimonialThree';
 import Faq from '../../components/faq/Faq';
 import BlogTwo from '../../components/blog/BlogTwo';
 import CallToAction2 from '../../components/call-to-action/CallToAction2';
-import FooterTwo from '../../components/footer/FooterTwo';
-import CopyRightFour from '../../components/footer/CopyRightFour';
+import Footer from '../../components/footernew/index';
 import Skill from '../../components/skill/Skill';
 
 const ArtificialIntelligence = () => {
@@ -239,10 +238,8 @@ const ArtificialIntelligence = () => {
                 <img src="images/shape/shape_17.svg" alt="" className="shapes shape-two"/>
                 <div className="container">
                   <div className="inner-wrapper">
-                        <FooterTwo />
-                        <div className="bottom-footer">
-                            <CopyRightFour />
-                        </div>
+                        <Footer />
+                        
                     </div>
                     {/* /.inner-wrapper */}
                 </div>

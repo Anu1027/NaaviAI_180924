@@ -8,6 +8,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@hookform/resolvers": "^2.8.8",
+    "@iconify/react": "^6.0.0",
     "@react-google-maps/api": "^2.19.3",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.0.1",

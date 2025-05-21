@@ -6,8 +6,7 @@ import InnerBanner from '../../../components/page-title/InnerBanner';
 import TestimonialThree from '../../../components/testimonial/TestimonialThree';
 import TestimonialOne from '../../../components/testimonial/TestimonialOne';
 import BannerFive from '../../../components/short-banner/BannerFive';
-import FooterFour from '../../../components/footer/FooterFour';
-import CopyRightFour from '../../../components/footer/CopyRightFour';
+import Footer from '../../../components/footernew/index';
 
 const Testimonial = () => {
     return (
@@ -95,10 +94,8 @@ const Testimonial = () => {
                                 </div>
                             </div>
                             {/* /.subscribe-area */}
-                            <FooterFour />
-                            <div className="bottom-footer">
-                                <CopyRightFour />
-                            </div>
+                            <Footer />
+                            
                         </div>
                         {/* /.inner-wrapper */}
                     </div>

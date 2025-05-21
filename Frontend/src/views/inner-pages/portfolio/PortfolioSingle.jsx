@@ -7,9 +7,9 @@ import 'react-image-lightbox/style.css';
 import TopNavFour from '../../../components/header/TopNavFour';
 import InnerBanner from '../../../components/page-title/InnerBanner';
 import BannerOne from '../../../components/short-banner/BannerOne';
-import NewsLetterForm from '../../../components/form/NewsLetterForm';
-import FooterFour from '../../../components/footer/FooterFour';
-import CopyRightFour from '../../../components/footer/CopyRightFour';
+
+import Footer from '../../../components/footernew/index';
+
 import BlockStyleSixteen from '../../../components/blockStyle/BlockStyleSixteen';
 
 const images = ["/images/gallery/img_21.jpg", "/images/gallery/img_19.jpg", "/images/gallery/img_18.jpg",];
@@ -154,28 +154,10 @@ const PortfolioSingle = () => {
                 <div className="footer-style-four space-fix-one theme-basic-footer">
                     <div className="container">
                         <div className="inner-wrapper">
-                            <div className="subscribe-area">
-                                <div className="row align-items-center">
-                                    <div className="col-md-6">
-                                        <div className="title-style-four sm-pb-20">
-                                            <h4 className="main-title">Join Our <span>Newsletter</span> &amp; Get updated.</h4>
-                                        </div>
-                                        {/* /.title-style-four */}
-                                    </div>
-                                    <div className="col-md-6">
-                                        <div className="subscribe-form">
-                                            <NewsLetterForm />
-                                            <p>We only send interesting and relevant emails.</p>
-                                        </div>
-                                        {/* /.subscribe-form */}
-                                    </div>
-                                </div>
-                            </div>
+                            
                             {/* /.subscribe-area */}
-                            <FooterFour />
-                            <div className="bottom-footer">
-                                <CopyRightFour />
-                            </div>
+                            <Footer />
+                            
                         </div>
                         {/* /.inner-wrapper */}
                     </div>

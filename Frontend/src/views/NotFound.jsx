@@ -7,9 +7,8 @@ import 'aos/dist/aos.css';
 // Import Navbar and other necessary components
 import TopNavFour from '../components/header/TopNavFour';
 import BannerOne from '../components/short-banner/BannerOne'; // Ensure the path is correct
-import FooterFour from '../components/footer/FooterFour';
-import CopyRightFour from '../components/footer/CopyRightFour';
-import NewsLetterForm from '../components/form/NewsLetterForm'; // Import the newsletter form
+import Footer from '../components/footernew/index';
+
 
 const NotFound = () => {
   useEffect(() => {
@@ -78,19 +77,14 @@ const NotFound = () => {
                   {/* /.title-style-four */}
                 </div>
                 <div className="col-md-6" data-aos="fade-left">
-                  <div className="subscribe-form">
-                    <NewsLetterForm />
-                    <p>We only send interesting and relevant emails.</p>
-                  </div>
+                  
                   {/* /.subscribe-form */}
                 </div>
               </div>
             </div>
             {/* /.subscribe-area */}
-            <FooterFour />
-            <div className="bottom-footer">
-              <CopyRightFour />
-            </div>
+            <Footer />
+            
           </div>
           {/* /.inner-wrapper */}
         </div>

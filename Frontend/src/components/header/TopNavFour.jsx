@@ -5,6 +5,7 @@ import MobileMenu from './MobileMenu';
 import ThemeMainMenu from './ThemeMainMenu';
 import Naavi from '../../assets/images/logo/logo_01.png';
 
+
 const TopNavFour = () => {
   const [navbar, setNavbar] = useState(false);
   const [modalIsOpen, setIsOpen] = useState(false);
@@ -38,10 +39,13 @@ const TopNavFour = () => {
     }
   };
 
+  
+
+
   return (
     <Fragment>
       <SearchModal isOpen={modalIsOpen} onClick={closeModal} bgColor="bg-three" />
-      <header className={navbar ? "theme-main-menu sticky-menu theme-menu-four fixed" : "theme-main-menu sticky-menu theme-menu-four"}>
+      <header className={navbar ? "theme-main-menu sticky-menu theme-menu-four fixed" : "theme-main-menu sticky-menu theme-menu-four "}>
         <div className="inner-content">
           <div className="d-flex align-items-center">
             <div className="">
