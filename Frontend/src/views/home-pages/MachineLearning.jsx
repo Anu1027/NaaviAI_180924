@@ -10,8 +10,8 @@ import PortfolioGalleryTwo from '../../components/portfolio/PortfolioGalleryTwo'
 import PriceTwo from '../../components/pricing/PriceTwo';
 import BlogThree from '../../components/blog/BlogThree';
 import BannerThree from '../../components/short-banner/BannerThree';
-import FooterFour from '../../components/footer/FooterFour';
-import CopyRightFour from '../../components/footer/CopyRightFour';
+import Footer from '../../components/footernew/index';
+
 import SkillTwo from '../../components/skill/SkillTwo';
 
 const MachineLearning = () => {
@@ -226,10 +226,8 @@ const MachineLearning = () => {
                 <div className="footer-style-one theme-basic-footer">
                     <div className="container">
                         <div className="inner-wrapper">
-                            <FooterFour />
-                            <div className="bottom-footer">
-                                <CopyRightFour />
-                            </div>
+                            <Footer />
+                            
                         </div>
                         {/* /.inner-wrapper */}
                     </div>

@@ -15,8 +15,8 @@ import BannerTwo from '../../components/short-banner/BannerTwo';
 import BlogTwo from '../../components/blog/BlogTwo';
 import AdressOne from '../../components/adress/AdressOne';
 import Info from '../../components/adress/Info';
-import FooterThree from '../../components/footer/FooterThree';
-import CopyRightFour from '../../components/footer/CopyRightFour';
+import Footer from '../../components/footernew/index';
+
 
 const ChatBoot = () => {
     return (
@@ -284,10 +284,8 @@ const ChatBoot = () => {
                     <img src="images/shape/shape_29.png" alt="" className="shapes shape-three"/>
                     <div className="container">
                         <div className="inner-wrapper">
-                            <FooterThree />
-                            <div className="bottom-footer">
-                                <CopyRightFour />
-                            </div>
+                            <Footer />
+                            
                         </div>
                         {/* /.inner-wrapper */}
                     </div>

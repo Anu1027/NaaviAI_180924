@@ -5,9 +5,9 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 import TopNavFour from '../../../components/header/TopNavFour';
-import FooterFour from '../../../components/footer/FooterFour';
-import CopyRightFour from '../../../components/footer/CopyRightFour';
-import NewsLetterForm from '../../../components/form/NewsLetterForm';
+import Footer from '../../../components/footernew/index';
+
+
 
 import SolutionImage from '../../../assets/images/assets/solution.png';
 
@@ -65,27 +65,9 @@ const Portfolio3Column = () => {
                 <div className="footer-style-four space-fix-one theme-basic-footer">
                     <div className="container">
                         <div className="inner-wrapper">
-                            <div className="subscribe-area">
-                                <div className="row align-items-center">
-                                    <div className="col-md-6" data-aos="fade-right">
-                                        <div className="title-style-four sm-pb-20">
-                                            <h4 className="main-title">
-                                                Join Our <span>Newsletter</span> & Get updated.
-                                            </h4>
-                                        </div>
-                                    </div>
-                                    <div className="col-md-6" data-aos="fade-left">
-                                        <div className="subscribe-form">
-                                            <NewsLetterForm />
-                                            <p>We only send interesting and relevant emails.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <FooterFour />
-                            <div className="bottom-footer">
-                                <CopyRightFour />
-                            </div>
+                           
+                            <Footer />
+                            
                         </div>
                     </div>
                 </div>

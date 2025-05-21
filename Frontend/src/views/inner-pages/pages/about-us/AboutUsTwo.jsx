@@ -10,8 +10,8 @@ import CommonCounter from '../../../../components/counter/CommonCounter';
 import TestimonialOne from '../../../../components/testimonial/TestimonialOne';
 import ContactTwo from '../../../../components/contact/ContactTwo';
 import BrandTwo from '../../../../components/brand/BrandTwo';
-import FooterFour from '../../../../components/footer/FooterFour';
-import CopyRightFour from '../../../../components/footer/CopyRightFour';
+import Footer from '../../../../components/footernew/index';
+
 import NewsFormTwo from '../../../../components/form/NewsFormTwo';
 
 
@@ -171,10 +171,8 @@ const AboutUsTwo = () => {
                                 </div>
                             </div>
                             {/* /.subscribe-area */}
-                            <FooterFour />
-                            <div className="bottom-footer">
-                                <CopyRightFour />
-                            </div>
+                            <Footer />
+                            
                         </div>
                         {/* /.inner-wrapper */}
                     </div>

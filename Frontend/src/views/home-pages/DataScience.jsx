@@ -15,8 +15,8 @@ import HeroBannerOne from '../../components/hero-banner/HeroBannerOne'
 import PortfolioGallery from '../../components/portfolio/PortfolioGallery'
 import PricingTab from '../../components/pricing/pricetab/PricingTab';
 import TestimonialOne from '../../components/testimonial/TestimonialOne';
-import FooterTwo from '../../components/footer/FooterTwo';
-import CopyRightFour from '../../components/footer/CopyRightFour';
+import Footer from '../../components/footernew/index';
+
 
 const DataScience = () => {
     return (
@@ -290,10 +290,8 @@ const DataScience = () => {
                 <div className="footer-style-one theme-basic-footer">
                     <div className="container">
                         <div className="inner-wrapper">
-                            <FooterTwo />
-                            <div className="bottom-footer">
-                                <CopyRightFour />
-                            </div>
+                            <Footer />
+                            
                         </div>
                         {/* /.inner-wrapper */}
                     </div>

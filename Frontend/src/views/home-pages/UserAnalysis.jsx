@@ -13,10 +13,10 @@ import TestimonialFive from '../../components/testimonial/TestimonialFive';
 import Faq from '../../components/faq/Faq';
 import Blog from '../../components/blog/Blog';
 import Contact from '../../components/contact/Contact';
-import CallToAction from '../../components/call-to-action/CallToAction';
+
 import BrandTwo from '../../components/brand/BrandTwo';
-import FooterFour from '../../components/footer/FooterFour';
-import CopyRightFour from '../../components/footer/CopyRightFour';
+import Footer from '../../components/footernew/index';
+
 
 
 
@@ -218,16 +218,12 @@ const UserAnalysis = () => {
                 <div className="footer-style-four theme-basic-footer">
                     <div className="container">
                         <div className="inner-wrapper">
-                            <div className="subscribe-area">
-                                <CallToAction/>
-                            </div>
+                           
                             {/* /.subscribe-area */}
 
-                            <FooterFour/> {/* /.FooterFour End */}
+                            <Footer/> {/* /.FooterFour End */}
 
-                            <div className="bottom-footer">
-                                <CopyRightFour/>
-                            </div>
+                            
                         </div>
                         {/* /.inner-wrapper */}
                     </div>
