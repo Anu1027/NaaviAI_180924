@@ -14,7 +14,7 @@ const seedAdmin = async () => {
       useUnifiedTopology: true,
     });
 
-    const existing = await AdminUser.findOne({ email: 'naavi@gmail.com' });
+    const existing = await AdminUser.findOne({ email: 'info@naavinetwork.ai' });
     if (existing) {
       console.log('Admin already exists');
       return process.exit(0);
@@ -23,7 +23,7 @@ const seedAdmin = async () => {
     const hashedPassword = await bcrypt.hash('%Test*(1987!', 10); //example for password
 
     const admin = new AdminUser({
-      email: 'naavi@gmail.com',
+      email: 'info@naavinetwork.ai',
       password: hashedPassword,
     });
 
