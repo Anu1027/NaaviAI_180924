@@ -66,22 +66,7 @@ const NotFound = () => {
       <div className="footer-style-four space-fix-one theme-basic-footer">
         <div className="container">
           <div className="inner-wrapper">
-            <div className="subscribe-area">
-              <div className="row align-items-center">
-                <div className="col-md-6" data-aos="fade-right">
-                  <div className="title-style-four sm-pb-20">
-                    <h4 className="main-title">
-                      Join Our <span>Newsletter</span> &amp; Get updated.
-                    </h4>
-                  </div>
-                  {/* /.title-style-four */}
-                </div>
-                <div className="col-md-6" data-aos="fade-left">
-                  
-                  {/* /.subscribe-form */}
-                </div>
-              </div>
-            </div>
+            
             {/* /.subscribe-area */}
             <Footer />
             

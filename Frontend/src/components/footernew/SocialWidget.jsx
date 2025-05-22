@@ -4,7 +4,7 @@ import Div from "../../views/inner-pages/contact/Div";
 
 export default function SocialWidget() {
   return (
-    <Div className="cs-social_btns cs-style1">
+    <Div className="contact-socials">
       <a href="https://www.linkedin.com/company/onnes-cryogenics/" className="cs-center" target="_blank" rel="noopener noreferrer">
         <Icon icon="fa6-brands:linkedin-in" />
       </a>

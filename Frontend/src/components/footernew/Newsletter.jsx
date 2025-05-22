@@ -17,13 +17,12 @@ export default function Newsletter({ title, subtitle, placeholder }) {
     }
 
     try {
-      // Make the API request to save the email
       const res = await axios.post("/api/admin-subscribe", { email });
 
       if (res.status === 201) {
         setMessage("Subscription successful!");
         setIsSuccess(true);
-        setEmail(""); // Clear the input field
+        setEmail("");
       }
     } catch (err) {
       setMessage("Error subscribing. Please try again later.");
@@ -34,25 +33,25 @@ export default function Newsletter({ title, subtitle, placeholder }) {
 
   return (
     <>
-      {title && <h2 className="cs-widget_title">{title}</h2>}
-      <Div className="cs-newsletter cs-style1">
-        <form onSubmit={handleSubscribe} className="cs-newsletter_form">
+      {title && <h2 className="widget-title">{title}</h2>}
+      <Div className="newsletter newsletter-style">
+        <form onSubmit={handleSubscribe} className="newsletter-form">
           <input
             type="email"
-            className="cs-newsletter_input"
+            className="newsletter-input"
             placeholder={placeholder}
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
           />
-          <button type="submit" className="cs-newsletter_btn">
+          <button type="submit" className="newsletter-btn">
             <span>Send</span>
           </button>
         </form>
-        <Div className="cs-newsletter_text">{subtitle}</Div>
+        <Div className="newsletter-subtitle">{subtitle}</Div>
         {message && (
           <div
-            className="cs-message"
+            className="message"
             style={{ color: isSuccess ? "#00B5F9ff" : "red" }}
           >
             {message}

@@ -1,6 +1,6 @@
 .footer {
   font-family: 'gorditaregular';
-  color: #f1f1f1;
+  background: linear-gradient(0deg, rgba(248, 253, 255, 0) 0%, rgba(241, 252, 255, 0.51782) 48.22%, #f6fdff 100%);
 }
 .footer-head{
   font-size:16px;
@@ -32,6 +32,7 @@
 }
 
 .footer-logo img {
+  margin-top:-10px;
   max-width: 250px;
   margin-bottom: 20px;
 }
@@ -92,7 +93,7 @@
   margin-bottom: 10px;
   width:100%;
   border: 1px solid black; /* Corrected border definition */
-  border-radius: 25px;
+  border-radius: 10px;
   overflow: hidden; /* Ensures child elements like input/button stay inside the rounded border */
 }
 
@@ -113,7 +114,6 @@
   border-radius: 15px;
   margin:3px;
   margin-left:-30px;
-  margin-right:10px;
   cursor: pointer;
 }
 

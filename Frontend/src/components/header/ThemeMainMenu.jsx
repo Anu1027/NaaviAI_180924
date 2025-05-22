@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom'; // Import useNavigate instead of useHistory
 import Naavi from '../../assets/images/logo/logo_01.png';
+import icon from '../../assets/images/icon/icon.png';
 
 const ThemeMainMenu = () => {
     const location = useLocation();
@@ -43,9 +44,230 @@ const ThemeMainMenu = () => {
                 </li>
                 {/* Updated Home Link */}
                 <li className={`nav-item ${location.pathname === '/' ? 'active' : ''}`}>
-                    <Link className="nav-link" to="/" onClick={handleHomeClick}>Home</Link>
+                    <Link className="nav-link" to="/" onClick={handleHomeClick}>HOME </Link>
                 </li>
-                <li className={`nav-item ${location.pathname.startsWith('/problem') ? 'active' : ''}`}>
+
+                <li className={`nav-item dropdown ${location.pathname.startsWith('/problem') ? 'active' : ''}`}>
+  <span className="nav-link dropdown-toggle flex items-center" onClick={(e) => e.preventDefault()}>
+    ABOUT
+    <span className="ml-1 inline-flex  items-center mb-2">
+      {/* Chevron Down SVG */}
+      <svg
+  width="20"
+  height="20"
+  viewBox="0 2 20 24"
+  fill="none"
+  stroke="currentColor"
+  strokeWidth="1.8"
+  strokeLinecap="round"
+  strokeLinejoin="round"
+  className="inline-block"
+  style={{ verticalAlign: 'middle' }}
+>
+  <polyline points="6 9 12 15 18 9" />
+</svg>
+
+    </span>
+  </span>
+
+  <ul className="dropdown-menu">
+    <li>
+      <Link to="/problem/about-us" className="dropdown-item" onClick={() => handlePageNavigation('/problem/about-us')}>
+        ABOUT US
+      </Link>
+    </li>
+    <li>
+      <Link to="/problem/why-naavi" className="dropdown-item" onClick={() => handlePageNavigation('/problem/why-naavi')}>
+        WHY NAAVI
+      </Link>
+    </li>
+    <li>
+      <Link to="/problem/vision-mission" className="dropdown-item" onClick={() => handlePageNavigation('/problem/vision-mission')}>
+        VISION & MISSION
+      </Link>
+    </li>
+  </ul>
+</li>
+
+<li className={`nav-item dropdown ${location.pathname.startsWith('/problem') ? 'active' : ''}`}>
+  <span className="nav-link dropdown-toggle" onClick={(e) => e.preventDefault()}>
+    TEAM <span className="ml-1 inline-flex  items-center mb-2">
+      {/* Chevron Down SVG */}
+      <svg
+  width="20"
+  height="20"
+  viewBox="0 2 20 24"
+  fill="none"
+  stroke="currentColor"
+  strokeWidth="1.8"
+  strokeLinecap="round"
+  strokeLinejoin="round"
+  className="inline-block"
+  style={{ verticalAlign: 'middle' }}
+>
+  <polyline points="6 9 12 15 18 9" />
+</svg>
+
+    </span>
+  </span>
+
+  <ul className="dropdown-menu">
+    <li>
+      <Link to="/problem/about-us" className="dropdown-item" onClick={() => handlePageNavigation('/problem/about-us')}>
+        FOUNDERS
+      </Link>
+    </li>
+    <li>
+      <Link to="/problem/why-naavi" className="dropdown-item" onClick={() => handlePageNavigation('/problem/why-naavi')}>
+        TEAM MEMBERS
+      </Link>
+    </li>
+    <li>
+      <button
+  className="dropdown-item w-full text-left"
+  onClick={handlePartnersClick}
+>
+  PARTNERS
+</button>
+
+    </li>
+  </ul>
+</li>
+
+<li className={`nav-item dropdown ${location.pathname.startsWith('/problem') ? 'active' : ''}`}>
+  <span className="nav-link dropdown-toggle" onClick={(e) => e.preventDefault()}>
+    IMPACT <span className="ml-1 inline-flex  items-center mb-2">
+      {/* Chevron Down SVG */}
+      <svg
+  width="20"
+  height="20"
+  viewBox="0 2 20 24"
+  fill="none"
+  stroke="currentColor"
+  strokeWidth="1.8"
+  strokeLinecap="round"
+  strokeLinejoin="round"
+  className="inline-block"
+  style={{ verticalAlign: 'middle' }}
+>
+  <polyline points="6 9 12 15 18 9" />
+</svg>
+
+    </span>
+  </span>
+
+  <ul className="dropdown-menu">
+    <li>
+      <Link to="/problem" className="dropdown-item" onClick={() => handlePageNavigation('/problem/about-us')}>
+        PROBLEM
+      </Link>
+    </li>
+    <li>
+      <Link to="/solution" className="dropdown-item" onClick={() => handlePageNavigation('/problem/why-naavi')}>
+        SOLUTION
+      </Link>
+    </li>
+    
+  </ul>
+</li>
+
+<li className={`nav-item dropdown ${location.pathname.startsWith('/problem') ? 'active' : ''}`}>
+  <span className="nav-link dropdown-toggle" onClick={(e) => e.preventDefault()}>
+    TECHNOLOGY <span className="ml-1 inline-flex  items-center mb-2">
+      {/* Chevron Down SVG */}
+      <svg
+  width="20"
+  height="20"
+  viewBox="0 2 20 24"
+  fill="none"
+  stroke="currentColor"
+  strokeWidth="1.8"
+  strokeLinecap="round"
+  strokeLinejoin="round"
+  className="inline-block"
+  style={{ verticalAlign: 'middle' }}
+>
+  <polyline points="6 9 12 15 18 9" />
+</svg>
+
+    </span>
+  </span>
+
+  <ul className="dropdown-menu">
+    <li>
+      <Link to="/problem" className="dropdown-item" onClick={() => handlePageNavigation('/problem/about-us')}>
+        PATHWAYS
+      </Link>
+    </li>
+    <li>
+      <Link to="/solution" className="dropdown-item" onClick={() => handlePageNavigation('/problem/why-naavi')}>
+        LLMS-KGs
+      </Link>
+    </li>
+    
+  </ul>
+</li>
+
+<li className={`nav-item dropdown ${location.pathname.startsWith('/problem') ? 'active' : ''}`}>
+  <span className="nav-link " onClick={(e) => e.preventDefault()}>
+    PRICING
+  </span>
+
+  {/* <ul className="dropdown-menu">
+    <li>
+      <Link to="/problem/about-us" className="dropdown-item" onClick={() => handlePageNavigation('/problem/about-us')}>
+        PATHWAYS
+      </Link>
+    </li>
+    <li>
+      <Link to="/problem/why-naavi" className="dropdown-item" onClick={() => handlePageNavigation('/problem/why-naavi')}>
+        LLMS-KGs
+      </Link>
+    </li>
+    
+  </ul> */}
+</li>
+<li className={`nav-item dropdown ${location.pathname.startsWith('/problem') ? 'active' : ''}`}>
+  <span className="nav-link dropdown-toggle" onClick={(e) => e.preventDefault()}>
+    MORE <span className="ml-1 inline-flex  items-center mb-2">
+      {/* Chevron Down SVG */}
+      <svg
+  width="20"
+  height="20"
+  viewBox="0 2 20 24"
+  fill="none"
+  stroke="currentColor"
+  strokeWidth="1.8"
+  strokeLinecap="round"
+  strokeLinejoin="round"
+  className="inline-block"
+  style={{ verticalAlign: 'middle' }}
+>
+  <polyline points="6 9 12 15 18 9" />
+</svg>
+
+    </span>
+  </span>
+
+  <ul className="dropdown-menu">
+    <li>
+      <Link to="/contact" className="dropdown-item" onClick={() => handlePageNavigation('/problem/about-us')}>
+        CONTACT
+      </Link>
+    </li>
+    <li>
+      <Link to="/problem/why-naavi" className="dropdown-item" onClick={() => handlePageNavigation('/problem/why-naavi')}>
+        BLOG & NEWS
+      </Link>
+    </li>
+    
+  </ul>
+</li>
+
+
+
+
+                {/* <li className={`nav-item ${location.pathname.startsWith('/problem') ? 'active' : ''}`}>
                     <Link 
                         className="nav-link" 
                         to="/problem" 
@@ -53,8 +275,8 @@ const ThemeMainMenu = () => {
                     >
                         Problem
                     </Link>
-                </li>
-                <li className={`nav-item ${location.pathname.startsWith('/solution') ? 'active' : ''}`}>
+                </li> */}
+                {/* <li className={`nav-item ${location.pathname.startsWith('/solution') ? 'active' : ''}`}>
                     <Link 
                         className="nav-link" 
                         to="/solution" 
@@ -62,9 +284,9 @@ const ThemeMainMenu = () => {
                     >
                         Solution
                     </Link>
-                </li>
+                </li> */}
                 {/* Updated Partners Link */}
-                <li className="nav-item">
+                {/* <li className="nav-item">
                     <button 
                         onClick={handlePartnersClick} 
                         className="nav-link" 
@@ -72,8 +294,8 @@ const ThemeMainMenu = () => {
                     >
                         Partners
                     </button>
-                </li>
-                <li className={`nav-item ${location.pathname === '/contact' ? 'active' : ''}`}>
+                </li> */}
+                {/* <li className={`nav-item ${location.pathname === '/contact' ? 'active' : ''}`}>
                     <Link 
                         className="nav-link" 
                         to="/contact" 
@@ -81,7 +303,7 @@ const ThemeMainMenu = () => {
                     >
                         Contact
                     </Link>
-                </li>
+                </li> */}
             </ul>
         </Fragment>
     );

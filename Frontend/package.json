@@ -19,6 +19,7 @@
     "bootstrap": "^5.3.6",
     "dayjs": "^1.11.13",
     "file-saver": "^2.0.5",
+    "html-react-parser": "^5.2.5",
     "leaflet": "^1.9.4",
     "lucide-react": "^0.511.0",
     "react": "^18.0.0",

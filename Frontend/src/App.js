@@ -15,6 +15,7 @@ import HomeDashboard from "./AdminDashboard/components/Home";
 import ContactList from "./AdminDashboard/components/ContactList";
 import SubscriptionList from "./AdminDashboard/components/SubscriptionList";
 import VisitorsList from "./AdminDashboard/components/VisitorsList";
+import BrandTwo from "./components/brand/BrandTwo";
 
 function App() {
   useEffect(() => {
@@ -55,6 +56,7 @@ function App() {
 
           {/* Admin Routes */}
           <Route path="/admin-login" element={<AdminLogin />} />
+          
           <Route path="/admin-dashboard" element={<PrivateRoute />}>
             <Route element={<AdminDashboard />}>
               <Route index element={<HomeDashboard />} />

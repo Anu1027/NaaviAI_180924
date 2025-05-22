@@ -4,20 +4,19 @@ import SearchModal from '../search-modal/SearchModal';
 import MobileMenu from './MobileMenu';
 import ThemeMainMenu from './ThemeMainMenu';
 import Naavi from '../../assets/images/logo/logo_01.png';
+import SideTogglePanel from './SideToggler';
 
 
 const TopNavFour = () => {
   const [navbar, setNavbar] = useState(false);
+  const [isSidebarOpen, setSidebarOpen] = useState(false);
   const [modalIsOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
 
-  const openModal = () => {
-    setIsOpen(true);
-  };
-  const closeModal = () => {
-    setIsOpen(!modalIsOpen);
-  };
+  const openSidebar = () => setSidebarOpen(true);
+  const closeSidebar = () => setSidebarOpen(false);
+  const closeModal = () => setIsOpen(false);
 
   const toggleMenu = () => {
     if (window.scrollY >= 68) {
@@ -45,6 +44,7 @@ const TopNavFour = () => {
   return (
     <Fragment>
       <SearchModal isOpen={modalIsOpen} onClick={closeModal} bgColor="bg-three" />
+      <SideTogglePanel isOpen={isSidebarOpen} onClose={closeSidebar} />
       <header className={navbar ? "theme-main-menu sticky-menu theme-menu-four fixed" : "theme-main-menu sticky-menu theme-menu-four "}>
         <div className="inner-content">
           <div className="d-flex align-items-center">
@@ -52,7 +52,7 @@ const TopNavFour = () => {
               <Link to="/" className="d-block"><img src={Naavi} alt="" width={200} /></Link>
             </div>
             <div className="right-widget d-flex align-items-center ms-auto order-lg-3">
-             <button className="menu-icon-btn d-none d-lg-block" onClick={handleSendMessage}>
+             <button className="menu-icon-btn d-none d-lg-block" onClick={openSidebar}>
     <span className="menu-icon-custom">
       <span className="bar"></span>
       <span className="bar"></span>
