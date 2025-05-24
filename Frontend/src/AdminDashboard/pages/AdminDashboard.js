@@ -50,7 +50,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
   return (
     <div className={`bg-white border-end ${sidebarOpen ? 'd-block' : 'd-none'} d-md-block`} style={{ width: '250px' }}>
       <div className="text-center p-3 border-bottom">
-        <img src={assessalogo} alt="Logo" style={{ width: '150px' }} />
+        <img src={assessalogo} alt="Logo" style={{ width: '200px' }} />
       </div>
       <nav className="nav flex-column p-3">
         <NavItem icon={FaHome} label="Home" path="/admin-dashboard/admin-home" />

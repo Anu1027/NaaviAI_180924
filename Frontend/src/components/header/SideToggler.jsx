@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import ContactInfoWidget from "../../views/inner-pages/contact/ContactInfoWidget";
 import Newsletter from "../../components/footernew/Newsletter";
 import SocialWidget from "../../components/footernew/SocialWidget";
-import logos from "../../assets/images/logo/logo_01.png";
+import logos from "../../assets/images/logo/naavi_final_logo2.png";
 import "./toggler.scss"; // Add this import
 
 export default function SideTogglePanel({ isOpen, onClose }) {

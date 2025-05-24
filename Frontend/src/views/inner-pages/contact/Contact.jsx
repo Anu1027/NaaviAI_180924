@@ -15,8 +15,6 @@ import './contact.scss';
 
 
 
-
-
 export default function Contact() {
 
   pageTitle("Contact Us");

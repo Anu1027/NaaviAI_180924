@@ -5,6 +5,8 @@
 .footer-head{
   font-size:16px;
   color:#000;
+  margin-top:-20px;
+  // margin-left:35px;
 
 }
 
@@ -32,15 +34,19 @@
 }
 
 .footer-logo img {
-  margin-top:-10px;
-  max-width: 250px;
+  margin-top:0px;
+  max-width: 100px;
   margin-bottom: 20px;
+  // margin-left:60px;
+
 }
 
 .footer-address {
   font-size: 17px;
   line-height: 1.6;
   color: #00284ECC;
+  margin-top:-20px;
+  width:260px;
 }
 
 .footer-socials {
@@ -107,7 +113,7 @@
 }
 
 .footer-subscribe button {
-  background-color: #00aaff;
+  background-color: #198754;
   color: white;
   border: none;
   padding: 0px 20px;

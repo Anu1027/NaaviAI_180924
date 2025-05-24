@@ -36,7 +36,7 @@ a:visited {
     text-align: center;
     margin-bottom: 50px;
     // margin-top: 50px;
-    color: #2c7cb2;
+    color: rgba(13, 110, 253, 0.9098039216);
 }
 
 /* Partner Logo Container */
@@ -64,7 +64,7 @@ ul.style-none {
     height: 180px; /* Fixed circle size */
     border-radius: 50%; /* Make it circular */
     overflow: hidden; /* Ensure overflow is hidden */
-    border: 2px solid #2c7cb2; /* Border color */
+    border: 2px solid #198754; /* Border color */
     display: flex;
     align-items: center; /* Center vertically */
     justify-content: center; /* Center horizontally */
@@ -134,7 +134,7 @@ ul.style-none {
     text-decoration: underline;
 }
 .page-breadcrumb li.current-page {
-    color: var(--prime-three);
+    color: rgba(13, 110, 253, 0.9098039216);
 }
 .page-breadcrumb li.current-page:after {
     display: none;
@@ -229,7 +229,7 @@ textarea {
 
 /* Highlight the word 'Knowledge Graphs' */
 .portfolio-heading .highlighted-word {
-    color: var(--prime-three);
+    color: rgba(13, 110, 253, 0.9098039216);
     text-decoration: underline;
     text-decoration-thickness: 5px;
 }

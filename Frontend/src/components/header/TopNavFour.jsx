@@ -3,7 +3,7 @@ import { Link, useNavigate, useLocation } from 'react-router-dom';
 import SearchModal from '../search-modal/SearchModal';
 import MobileMenu from './MobileMenu';
 import ThemeMainMenu from './ThemeMainMenu';
-import Naavi from '../../assets/images/logo/logo_01.png';
+import Naavi from '../../assets/images/logo/naavi_final_logo2.png';
 import SideTogglePanel from './SideToggler';
 
 

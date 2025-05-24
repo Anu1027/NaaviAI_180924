@@ -6,7 +6,8 @@ import Newsletter from './Newsletter';
 import SocialWidget from './SocialWidget';
 import TextWidget from './TextWidget';
 import './footer.scss';
-import Logo from "../../assets/images/logo/logo_01.png";
+import Logo from "../../assets/images/logo/naavi_footer_logo.png";
+// import Logo from "../../assets/images/logo/naavi_final_logo2.png";
 const copyrightLinks = [
   {
     title: 'Terms of Use',
@@ -52,7 +53,7 @@ const Footer = () => {
                 <img src={Logo} alt="Logo" />
               </div>
               <p className="footer-address">
-                <div className='footer-head'>ONNES RUSKIV CRYOGENICS PVT LTD</div><br />
+                <div className='footer-head'>NAAVI NETWORK</div><br />
                 T-Hub, Hyderabad Knowledge City<br />
                 Hyderabad,<br />
                 Telangana 500081 INDIA
