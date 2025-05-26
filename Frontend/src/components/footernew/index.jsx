@@ -52,12 +52,13 @@ const Footer = () => {
               <div className="footer-logo">
                 <img src={Logo} alt="Logo" />
               </div>
-              <p className="footer-address">
-                <div className='footer-head'>NAAVI NETWORK</div><br />
-                T-Hub, Hyderabad Knowledge City<br />
+              <div className="footer-address">
+                <p className='footer-head'><strong>NAAVI NETWORK</strong><br />
+                T-Hub, Knowledge City<br />
                 Hyderabad,<br />
                 Telangana 500081 INDIA
-              </p>
+                </p>
+              </div>
               <div className="footer-socials">
                 <a href="#"><i className="fab fa-linkedin-in"></i></a>
                 <a href="#"><i className="fab fa-instagram"></i></a>

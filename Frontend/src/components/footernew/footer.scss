@@ -4,8 +4,8 @@
 }
 .footer-head{
   font-size:16px;
-  color:#000;
-  margin-top:-20px;
+  color: rgba(0, 40, 78, 0.8);
+  margin-top:0px;
   // margin-left:35px;
 
 }
@@ -36,7 +36,8 @@
 .footer-logo img {
   margin-top:0px;
   max-width: 100px;
-  margin-bottom: 20px;
+  margin-bottom: -6px;
+  // margin-left:20px;
   // margin-left:60px;
 
 }
@@ -44,9 +45,10 @@
 .footer-address {
   font-size: 17px;
   line-height: 1.6;
-  color: #00284ECC;
-  margin-top:-20px;
+  color: rgba(0, 40, 78, 0.8);
+  margin-top:-25px ;
   width:260px;
+  
 }
 
 .footer-socials {
@@ -92,6 +94,7 @@
 .footer-contact {
   font-size: 16px;
   color: #00284ECC;
+  margin-top:-5px !important;
 }
 
 .footer-subscribe {
