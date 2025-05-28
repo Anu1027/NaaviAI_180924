@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import ModalVideos from '../ModalVideo/ModalVideos';
+import bannerimage from '../../assets/images/assets/naavibanner.png'
 
 const HeroBannerFive = () => {
     return (
@@ -10,7 +11,7 @@ const HeroBannerFive = () => {
                     <div className="row">
                         <div className="col-xxl-6 col-md-7">
                             <h1 className="hero-heading">Find Your Education<span> Pathway</span></h1>
-                            <p className="text-lg mb-50 pt-40 pe-xl-5 md-pt-30 md-mb-40">Naavi is your partner in finding the perfect education path, designed for your unique career goals.</p>
+                            <p className="text-lg mb-100 pe-xl-5 -mt-6 md-pt-0 md-mb-40 md-mt-0">Naavi is your partner in finding the perfect education path, designed for your unique career goals.</p>
                             <ul className="style-none button-group d-flex align-items-center">
                                 {/* Button to open the chatbot in a new tab */}
                                 <li className="me-4">
@@ -24,10 +25,16 @@ const HeroBannerFive = () => {
                     </div>
                 </div>
                 <div className="illustration-holder">
-                    <img src="images/assets/ils_13.svg" alt="" className="main-illustration ms-auto " />
-                    <img src="images/assets/ils_13_1.svg" alt="" className="shapes shape-one" />
-                    <img src="images/assets/ils_13_2.svg" alt="" className="shapes shape-two" data-aos="fade-down" />
-                    <img src="images/assets/ils_13_2.svg" alt="" className="shapes shape-three" data-aos="fade-down" />
+                    <img
+  src={bannerimage}
+  alt="banner"
+  style={{
+    width: '900px',
+    height: 'auto',
+    marginLeft:'-400px',
+    marginTop:'-120px',
+  }}
+/>
                 </div>
                 <div className="shapes oval-one" />
             </div>

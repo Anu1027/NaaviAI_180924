@@ -3,7 +3,7 @@ name: Deploy to Server
 on:
   push:
     branches:
-      - 26/05/2025   # Trigger only on this branch
+      - 28/05/2025   # Trigger only on this branch
 
 jobs:
   deploy:
