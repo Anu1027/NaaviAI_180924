@@ -25,5 +25,5 @@ jobs:
         run: |
           ssh -o StrictHostKeyChecking=no ubuntu@testweb.naavinetwork.ai << 'EOF'
             echo "✅ Running deploy.sh script on EC2..."
-            sudo bash /home/ubuntu/deploy.sh 26/05/2025
+            sudo bash /home/ubuntu/deploy.sh 28/05/2025
           EOF
