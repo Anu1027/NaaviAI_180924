@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import ModalVideos from '../ModalVideo/ModalVideos';
-import bannerimage from '../../assets/images/assets/naavibanner.png'
+import bannerimage from '../../assets/images/assets/naavi_banner4.png'
 
 const HeroBannerFive = () => {
     return (
@@ -29,10 +29,10 @@ const HeroBannerFive = () => {
   src={bannerimage}
   alt="banner"
   style={{
-    width: '900px',
-    height: 'auto',
-    marginLeft:'-400px',
-    marginTop:'-120px',
+    width: '1350px',
+    height: '100%',
+    marginLeft:'-760px',
+    marginTop:'-220px',
   }}
 />
                 </div>
