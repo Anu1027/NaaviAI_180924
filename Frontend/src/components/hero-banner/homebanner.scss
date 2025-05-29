@@ -1,0 +1,63 @@
+.hero-badge-container {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* consistent spacing */
+
+}
+
+.hero-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px; /* fixed height */
+    min-width: 80px; /* ensures even small badges look balanced */
+    padding: 0 10px; /* horizontal padding */
+    border-radius: 20px;
+    letter-spacing:2px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space: nowrap;
+    height: 26px; 
+    line-height: 1;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* soft shadow */
+}
+
+.routes {
+    color: #1A1A1A;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.essentials {
+    background-color: #E7F5E8;
+    color: #2D8A4D;
+}
+
+.pro {
+    background-color: #EAF2FF;
+    color: #3461FF;
+}
+
+.enterprise {
+    background-color: #FFF3D9;
+    color: #FFA600;
+}
+
+.home{
+    font-size:50px;
+    font-weight:600;
+    line-height: 72px;
+    width:80%;
+    color: black;
+    padding-top:25px;
+    letter-spacing: 1px;
+}
+
+.green-text {
+  color: #2D8A4D; /* Green */
+}
+
+.amber-text {
+  color: #FFA600; /* Amber */
+}

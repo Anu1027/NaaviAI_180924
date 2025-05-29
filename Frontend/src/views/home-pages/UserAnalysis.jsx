@@ -13,6 +13,10 @@ import TestimonialFive from '../../components/testimonial/TestimonialFive';
 import Faq from '../../components/faq/Faq';
 import Blog from '../../components/blog/Blog';
 import Contact from '../../components/contact/Contact';
+import globe from '../../assets/images/assets/globe.svg';
+import car from '../../assets/images/assets/car.svg';
+import route from '../../assets/images/assets/route.svg';
+import './useranalysis.scss'
 
 import BrandTwo from '../../components/brand/BrandTwo';
 import Footer from '../../components/footernew/index';
@@ -34,6 +38,30 @@ const UserAnalysis = () => {
 
                 <HeroBannerFive/> 
                 {/* {Herobanner End} */}
+
+                {/* Three-Image Feature Section */}
+<div className="featureSection">
+  <div className="container">
+    <div className="row text-center">
+      <div className="col-md-4 mb-40" data-aos="fade-up">
+        <img src={car} alt="Car Icon" className="featureIcon" />
+        <div className="featureTitle">Real-time Paths</div>
+        <p className="featureText">Improve pathways forecast with up-to-date global data</p>
+      </div>
+      <div className="col-md-4 mb-40" data-aos="fade-up" data-aos-delay="100">
+        <img src={globe} alt="Globe Icon" className="featureIcon" />
+        <div className="featureTitle">Global Routing</div>
+        <p className="featureText">Provide pathways with steps to over 20 countries</p>
+      </div>
+      <div className="col-md-4 mb-40" data-aos="fade-up" data-aos-delay="200">
+        <img src={route} alt="Routing Icon" className="featureIcon" />
+        <div className="featureTitle">Precise Nano steps</div>
+        <p className="featureText">Steps with mentors optimized for success</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
                 <div className="fancy-feature-seventeen position-relative mt-160 xl-mt-50">
@@ -104,57 +132,7 @@ const UserAnalysis = () => {
                 {/* /.fancy-feature-nineteen */}
 
                 <CounterOne/> 
-                {/* /Counter one end */}
-
-                {/* <div className="feedback-section-five pt-130 lg-pt-100 pb-95 lg-pb-40">
-                    <div className="container">
-                        <div className="title-style-three text-center" data-aos="fade-up">
-                            <div className="sc-title">Testimonials</div>
-                            <h2 className="main-title">Words from <span>Client</span>
-                            </h2>
-                        </div>
-                        
-                        <TestimonialFive/>
-                        
-                    </div>
-                    <img
-                        src="images/media/img_08.jpg"
-                        alt=""
-                        className="shapes avatar-one"
-                        width={45}
-                        height={45}
-                        style={{
-                        outlineWidth: '6px'
-                    }}/>
-                    <img
-                        src="images/media/img_09.jpg"
-                        alt=""
-                        className="shapes avatar-two"
-                        width={85}
-                        height={85}
-                        style={{
-                        outlineWidth: '10px'
-                    }}/>
-                    <img
-                        src="images/media/img_10.jpg"
-                        alt=""
-                        className="shapes avatar-three"
-                        width={85}
-                        height={85}
-                        style={{
-                        outlineWidth: '10px'
-                    }}/>
-                    <img
-                        src="images/media/img_11.jpg"
-                        alt=""
-                        className="shapes avatar-four"
-                        width={50}
-                        height={50}
-                        style={{
-                        outlineWidth: '5px'
-                    }}/>
-                </div> */}
-                {/* /.feedback-section-five */}
+               
 
                 <div
                     className="fancy-feature-twenty position-relative mt-160 pb-100 lg-mt-100 lg-pb-70">
