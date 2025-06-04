@@ -3,7 +3,7 @@ name: Deploy to Server
 on:
   push:
     branches:
-      - 28/05/2025   # Trigger only on this branch
+      - 04/banner   # Trigger only on this branch
 
 jobs:
   deploy:
@@ -25,5 +25,5 @@ jobs:
         run: |
           ssh -o StrictHostKeyChecking=no ubuntu@testweb.naavinetwork.ai << 'EOF'
             echo "✅ Running deploy.sh script on EC2..."
-            sudo bash /home/ubuntu/deploy.sh 26/05/2025
+            sudo bash /home/ubuntu/deploy.sh 04/banner
           EOF
