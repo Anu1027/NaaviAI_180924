@@ -43,16 +43,10 @@ const HeroBannerFive = () => {
                 </div>
 
                 <div className="illustration-holder">
-                    <img
-                        src={bannerimage}
-                        alt="banner"
-                        style={{
-                            width: '1350px',
-                            height: '100%',
-                            marginLeft: '-760px',
-                            marginTop: '-220px',
-                        }}
-                    />
+                    <div className="illustration-holder">
+  <img src={bannerimage} alt="banner" className="responsive-banner" />
+</div>
+
                 </div>
                 <div className="shapes oval-one" />
             </div>
