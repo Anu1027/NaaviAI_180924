@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import SD from '../assets/images/assets/SD1.png'; // Adjust the path as necessary
+import SD from '../assets/images/assets/problem.webp'; // Adjust the path as necessary
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 

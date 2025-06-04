@@ -3861,7 +3861,7 @@ body .btn-eight:hover {
     line-height: 33px;
     text-align: center;
 }
-/*^^^^^^^^^^^^^^^^^^^^^ Fancy Short Banner Three ^^^^^^^^^^^^^^^^^^^^^^^^*/
+
 .fancy-short-banner-three {
     background: var(--prime-one);
     padding: 75px 0 80px;
@@ -3907,25 +3907,32 @@ body .btn-eight:hover {
 }
 
 .problempage-image {
-    width: 90%;
-    height: 70%;
-    padding-left: 100px;
+  width: 140%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin-left: 0;
+}
 
-    @media (max-width: 1200px) {
-        width: 85%; 
-        padding-left: 50px;
-    }
+@media (min-width: 1280px) {
+  .problempage-image {
+    width: 170%;
+    margin-left: -20%;
+  }
+}
 
-    @media (max-width: 768px) {
-        width: 100%; 
-        padding-left: 0;
-    }
+@media (min-width: 1536px) {
+  .problempage-image {
+    width: 180%;
+    margin-left: -30%;
+  }
+}
 
-    @media (max-width: 480px) {
-        width: 100%; 
-        height: auto;
-        padding-left: 0;
-    }
+@media (max-width: 768px) {
+  .problempage-image {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 
 .hero-banner-five .custom-card-problempage p {

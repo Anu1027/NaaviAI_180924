@@ -16,7 +16,8 @@ import Contact from '../../components/contact/Contact';
 import globe from '../../assets/images/assets/globe.svg';
 import car from '../../assets/images/assets/car.svg';
 import route from '../../assets/images/assets/route.svg';
-import './useranalysis.scss'
+import './useranalysis.scss';
+import useranalysis from '../../assets/images/assets/useranalysis2.webp';
 
 import BrandTwo from '../../components/brand/BrandTwo';
 import Footer from '../../components/footernew/index';
@@ -60,6 +61,15 @@ const UserAnalysis = () => {
       </div>
     </div>
   </div>
+</div>
+
+
+<div className="map-visual-wrapper text-center">
+  <img
+    src={useranalysis}
+    alt="User Path Maps"
+    className="map-visual-img"
+  />
 </div>
 
 

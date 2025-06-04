@@ -37,3 +37,29 @@
     font-size: 14px;
   }
 }
+
+.map-visual-wrapper {
+  background-color: #f9f9f9;
+  padding: 0rem 0rem;
+  text-align: center;
+
+  .map-visual-img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    
+    transition: all 0.3s ease-in-out;
+  }
+
+  @media (min-width: 1200px) {
+    .map-visual-img {
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 1600px) {
+    .map-visual-img {
+      width: 100%;
+    }
+  }
+}
