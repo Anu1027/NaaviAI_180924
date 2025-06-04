@@ -9,10 +9,10 @@ import {
   FaHome
 } from 'react-icons/fa';
 
-import assessalogo from "../../logos/logo_01.png";
+import assessalogo from "../../assets/images/logo/naavi_final_logo2.png";
 import { useState } from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import "./AdminStyles.css";
+
+import "./AdminStyles.scss";
 
 export default function AdminDashboard() {
   const [sidebarOpen, setSidebarOpen] = useState(true);
@@ -49,10 +49,15 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
 
   return (
     <div className={`bg-white border-end ${sidebarOpen ? 'd-block' : 'd-none'} d-md-block`} style={{ width: '250px' }}>
-      <div className="text-center p-3 border-bottom">
-        <img src={assessalogo} alt="Logo" style={{ width: '200px' }} />
+      <div
+  className="text-center p-3"
+  style={{
+    borderBottom: '1px solid #dee2e6' // You can change the color and thickness here
+  }}
+>
+        <img src={assessalogo} alt="Logo" style={{ width: '180px', marginLeft:'-2rem' }} />
       </div>
-      <nav className="nav flex-column p-3">
+      <div className="admin-sidebar" style={{ fontSize: '16px' }}>
         <NavItem icon={FaHome} label="Home" path="/admin-dashboard/admin-home" />
         <NavItem icon={FaEnvelope} label="Contact Us" path="/admin-dashboard/admin-contact" />
         <NavItem icon={FaUserPlus} label="Subscribe" path="/admin-dashboard/admin-subscribe" />
@@ -64,7 +69,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
         >
           <FaSignOutAlt /> Logout
         </div>
-      </nav>
+      </div>
     </div>
   );
 }

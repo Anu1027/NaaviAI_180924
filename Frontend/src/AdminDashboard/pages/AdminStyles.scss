@@ -17,10 +17,13 @@
 /* Card */
 .admin-login-card {
   background: #ffffff;
-  padding: 50px 40px; /* Increased padding for a slightly larger card */
+  padding: 30px 40px; /* Increased padding for a slightly larger card */
   border-radius: 16px;
   box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
+  height:50% !important;
   width: 100%;
+  margin-top: 30px;
+  margin-bottom:30px;
   max-width: 450px; /* Increased max width for larger card */
 }
 
@@ -31,14 +34,16 @@
 }
 
 .logo-image {
-  height: 40px; /* Reduced size of logo */
+  height: 50px; /* Reduced size of logo */
   margin: 0 auto; /* Ensure it's centered */
+  margin-left: -15px;
+  width:50%;
 }
 
 /* Title */
 .admin-login-title {
-  font-size: 28px;
-  color: #0488f2; /* Azure Radiance */
+  font-size: 23px;
+  color: #0d6efd; /* Azure Radiance */
   text-align: center;
   margin-bottom: 30px;
   font-weight: bold;
@@ -46,19 +51,20 @@
 
 /* Form */
 .admin-login-form .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 35px;
 }
 
 .admin-login-form label {
   display: block;
   margin-bottom: 8px;
+  margin-top:-15px;
   color: #333333;
   font-weight: 600;
 }
 
 .admin-login-form input {
   width: 100%;
-  padding: 10px 15px;
+  padding: 4px 15px;
   border: 1px solid #cccccc;
   border-radius: 8px;
   font-size: 14px;
@@ -93,17 +99,18 @@
 
 /* Focus state */
 .admin-login-form input:focus {
-  border-color: #0488f2;
+  border-color: #0d6efd;
   outline: none;
 }
 
 /* Button */
 .admin-login-button {
   width: 100%;
-  background-color: #0488f2;
+  background-color: #198754;
   color: white;
   font-weight: 600;
-  padding: 12px;
+  padding: 4px;
+  margin-top:10px;
   border: none;
   border-radius: 8px;
   font-size: 16px;
@@ -112,7 +119,7 @@
 }
 
 .admin-login-button:hover {
-  background-color: #0369c9; /* darker blue on hover */
+  background-color: #1ba766; /* darker blue on hover */
 }
 
 /* Error message */
@@ -177,7 +184,7 @@ body {
 
 .table-container h2 {
   margin-bottom: 20px;
-  color: #0488f2;
+  color: #161617;
 }
 
 /* Table Styling */
@@ -187,8 +194,9 @@ table {
 }
 
 thead {
-  background-color: #0488f2;
-  color: white;
+  font-size: 16px;
+  text-align: center;
+  color: black;
 }
 
 th, td {
@@ -214,4 +222,14 @@ tbody tr:hover {
 .welcome-message p {
   color: #333;
   font-size: 18px;
+}
+
+.admin-sidebar{
+  font-size:16px;
+  padding:20px 20px;
+  gap:3px;
+  line-height: 25px;
+  font-weight:500;
+  color:black
+
 }

@@ -70,22 +70,22 @@ const SubscriptionList = () => {
   };
 
   return (
-    <div className="container" style={{ minHeight: '100vh', backgroundColor: '#f4f6f9', paddingTop: '30px' }}>
+    <div className="container" style={{ minHeight: '100vh', backgroundColor: '#f4f6f9', paddingTop: '30px', paddingLeft:'30px' }}>
       <div className="d-flex justify-content-between align-items-center mb-4 flex-wrap">
-        <h1 style={{ color: '#00B5F9', fontWeight: 'bold', fontSize: '36px' }}>Subscribed Emails</h1>
+        <h1 style={{ color: 'black', fontWeight: 'bold', fontSize: '36px' }}>Subscribed Emails</h1>
         <Button
           type="primary"
           onClick={exportData}
-          style={{ backgroundColor: '#00B5F9', borderColor: '#00B5F9', borderRadius: '20px', padding: '8px 24px' }}
+          style={{ backgroundColor: '#198754', borderColor: '#198754', borderRadius: '20px', padding: '8px 24px' }}
         >
           Export
         </Button>
       </div>
 
       {/* Filters */}
-      <div className="row g-3 mb-4">
+      <div className="row g-3 mb-4 mt-45">
         <div className="col-md-3">
-          <label htmlFor="startDate" style={{ color: '#00B5F9', fontWeight: 600 }}>Start Date</label>
+          <label htmlFor="startDate" style={{ color: '#198754', fontWeight: 600, fontSize:'1.2rem' }}>Start Date</label>
           <DatePicker
             id="startDate"
             style={{ width: '100%', borderRadius: '8px' }}
@@ -95,7 +95,7 @@ const SubscriptionList = () => {
           />
         </div>
         <div className="col-md-3">
-          <label htmlFor="endDate" style={{ color: '#00B5F9', fontWeight: 600 }}>End Date</label>
+          <label htmlFor="endDate" style={{ color: '#198754', fontWeight: 600, fontSize:'1.2rem' }}>End Date</label>
           <DatePicker
             id="endDate"
             style={{ width: '100%', borderRadius: '8px' }}
@@ -109,7 +109,7 @@ const SubscriptionList = () => {
       {/* Table */}
       <div className="card p-4 shadow-sm" style={{ borderRadius: '10px' }}>
         <table className="table table-bordered">
-          <thead style={{ backgroundColor: '#00B5F9', color: '#fff' }}>
+          <thead >
             <tr>
               <th>S.No</th>
               <th>Email</th>

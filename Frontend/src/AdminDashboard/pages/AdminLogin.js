@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "./AdminStyles.css";
-import logo from "../../logos/logo_01.png";
+import "./AdminStyles.scss";
+import logo from "../../assets/images/logo/naavi_final_logo2.png";
 import { Eye, EyeOff } from "lucide-react";
 import axios from "axios"; // Add this
 

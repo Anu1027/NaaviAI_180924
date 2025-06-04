@@ -111,7 +111,9 @@ const HomeDashboard = () => {
         display: 'grid',
         gridTemplateColumns: isMobile ? '1fr' : 'repeat(auto-fit, minmax(280px, 1fr))',
         gap: isMobile ? '16px' : '24px',
-        marginBottom: isMobile ? '24px' : '32px'
+        marginBottom: isMobile ? '24px' : '32px',
+        height:'2px',
+       
       }}>
         {chartData.map((item, index) => (
           <div key={item.name} style={{
@@ -119,7 +121,8 @@ const HomeDashboard = () => {
                         index === 1 ? 'linear-gradient(135deg, #43e97b, #38f9d7)' : 
                         'linear-gradient(135deg, #fe9496, #ff6b6b)',
             borderRadius: '16px',
-            padding: isMobile ? '16px' : '24px',
+            padding: isMobile ? '16px' : '10px',
+            paddingLeft: isMobile ? '16px' : '20px',
             boxShadow: '0 10px 20px rgba(0, 0, 0, 0.1)',
             position: 'relative',
             overflow: 'hidden',
@@ -150,14 +153,15 @@ const HomeDashboard = () => {
             }}></div>
             
             <div style={{ position: 'relative', zIndex: 1 }}>
-              <p style={{
+              <div style={{
                 fontSize: isMobile ? '0.9rem' : '1rem',
                 marginBottom: isMobile ? '12px' : '16px',
+                paddingTop:'-8rem',
                 fontWeight: '500',
                 opacity: 0.9
-              }}>{item.name}</p>
+              }}>{item.name}</div>
               
-              <p style={{
+              <div style={{
                 fontSize: isMobile ? '1.5rem' : '1.8rem',
                 fontWeight: '700',
                 margin: '0 0 8px 0',
@@ -173,7 +177,7 @@ const HomeDashboard = () => {
                     />
                   </>
                 ) : '--'}
-              </p>
+              </div>
               
               {/* Trend indicator */}
               <div style={{
@@ -215,7 +219,8 @@ const HomeDashboard = () => {
       <div style={{
         display: 'grid',
         gridTemplateColumns: isMobile ? '1fr' : 'repeat(auto-fit, minmax(400px, 1fr))',
-        gap: isMobile ? '20px' : '28px'
+        gap: isMobile ? '20px' : '28px',
+        marginTop:'250px',
       }}>
         {/* Modern Area Chart */}
         <div style={{
@@ -245,6 +250,7 @@ const HomeDashboard = () => {
             color: '#1a365d',
             fontSize: isMobile ? '1rem' : '1.1rem',
             fontWeight: '600',
+            
             marginBottom: isMobile ? '14px' : '18px',
             position: 'relative',
             zIndex: 1
@@ -307,6 +313,7 @@ const HomeDashboard = () => {
           <div style={{
             position: 'absolute',
             top: '-50%',
+           
             left: '-50%',
             width: '200%',
             height: '200%',
@@ -321,6 +328,7 @@ const HomeDashboard = () => {
             fontSize: isMobile ? '1rem' : '1.1rem',
             fontWeight: '600',
             marginBottom: isMobile ? '14px' : '18px',
+            marginTop: '18px',
             position: 'relative',
             zIndex: 1
           }}>Category Distribution</h3>

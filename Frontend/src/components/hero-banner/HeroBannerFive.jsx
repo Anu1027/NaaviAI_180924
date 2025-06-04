@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import ModalVideos from '../ModalVideo/ModalVideos';
-import bannerimage from '../../assets/images/assets/naavi_banner4.png';
+import bannerimage from '../../assets/images/assets/naavi_banner5.png';
 import './homebanner.scss';
 
 const HeroBannerFive = () => {
@@ -24,15 +24,14 @@ const HeroBannerFive = () => {
   Explore customized efficient <span className="green-text">Pathways</span> and <span className="amber-text">Steps</span> for You
 </div>
 
-                            <p className="text-lg mb-100 pe-xl-5 -mt-6 md-pt-0 md-mb-40 md-mt-0">
+                            <div className="home-text">
                                 Navigate towards your dream educational, skill and career destinations globally
-                            </p>
+                            </div>
                             <ul className="style-none button-group d-flex align-items-center">
                                 <li className="me-4">
                                     <a
                                         href="https://generate.naavinetwork.ai"
                                         target="_blank"
-                                        rel="noopener noreferrer"
                                         className="ripple-btn btn-one"
                                     >
                                         Generate

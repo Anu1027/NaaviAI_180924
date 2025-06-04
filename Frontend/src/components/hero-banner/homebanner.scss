@@ -54,6 +54,13 @@
     letter-spacing: 1px;
 }
 
+.home-text {
+  font-size: 24px; /* Tailwind's text-lg */
+  margin-bottom: 100px;
+  width:80%;
+  padding-right: 3rem; /* Tailwind's pe-xl-5 */
+  margin-top: 1.5rem; /* Tailwind's -mt-6 */
+}
 .green-text {
   color: #2D8A4D; /* Green */
 }
