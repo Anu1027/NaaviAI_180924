@@ -79,21 +79,21 @@
 }
 
 /* Medium screens (e.g., 14" laptops) */
-@media (min-width: 1024px) {
-  .responsive-banner {
-    width: 1350px;
-    height: 100%;
-    margin-left: -1440px !important;
-    margin-top: -220px;
-  }
-}
-
-/* Large screens (e.g., 16" laptops and Surface Pro) */
-@media (min-width: 1280px) {
+@media (min-width: 1024px) and (max-width:1280px){
   .responsive-banner {
     width: 1350px;
     height: 100%;
     margin-left: -1040px !important;
     margin-top: -220px;
+  }
+}
+
+/* Large screens (e.g., 16" laptops and Surface Pro) */
+@media (min-width: 1281px) {
+  .responsive-banner {
+    width: 1650px;
+    height: 100%;
+    margin-left: -950px !important;
+    margin-top: -280px;
   }
 }
