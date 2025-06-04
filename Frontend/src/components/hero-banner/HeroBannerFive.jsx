@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import ModalVideos from '../ModalVideo/ModalVideos';
-import bannerimage from '../../assets/images/assets/naavi_banner5.png';
+import bannerimage from '../../assets/images/assets/naavi_banner6.webp';
 import './homebanner.scss';
 
 const HeroBannerFive = () => {
