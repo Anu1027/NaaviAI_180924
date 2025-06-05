@@ -13,9 +13,9 @@ import TestimonialFive from '../../components/testimonial/TestimonialFive';
 import Faq from '../../components/faq/Faq';
 import Blog from '../../components/blog/Blog';
 import Contact from '../../components/contact/Contact';
-import globe from '../../assets/images/assets/globe.svg';
-import car from '../../assets/images/assets/car.svg';
-import route from '../../assets/images/assets/route.svg';
+import globe from '../../assets/images/assets/naavi-icon4.webp';
+import car from '../../assets/images/assets/naavi-icon2.webp';
+import route from '../../assets/images/assets/naavi-icon3.webp';
 import './useranalysis.scss';
 import useranalysis from '../../assets/images/assets/useranalysis2.webp';
 

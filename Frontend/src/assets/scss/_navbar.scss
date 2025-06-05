@@ -262,6 +262,7 @@
     }
     .theme-main-menu .navbar .mega-dropdown {
         position: relative;
+    
     }
     .navbar .navbar-nav .nav-link {
         margin: 0;
@@ -344,13 +345,13 @@
     padding: 0;
     padding-bottom: 10px;
     padding-top: 5px;
-    border-top: 1px solid #333;
+   
 }
 .mobile-menu-wrapper .pro-sidebar .pro-menu .pro-menu-item > .pro-inner-item > .pro-item-content {
-    color: #fff;
+    color: black;
     font-size: 18px;
     & a {
-        color: #fff;
+        color: black;
     }
 }
 .mobile-menu-wrapper .pro-sidebar .pro-menu > ul > .pro-sub-menu > .pro-inner-list-item {
@@ -359,17 +360,17 @@
 }
 
 .mobile-menu-wrapper .pro-sidebar .pro-menu a {
-    color: #fff;
+    color: black;
     font-size: 16px;
 }
 
 //partner button styling
 .mobile-menu-wrapper .pro-sidebar .pro-menu button {
-    color: #fff;
+    color: black;
     font-size: 16px;
 }
 .mobile-menu-wrapper .pro-sidebar > .pro-sidebar-inner {
-    background-color: #222549;
+    background-color: white
 }
 
 .mobile-logo img {
@@ -377,7 +378,7 @@
 }
 
 .mobile-menu-wrapper .close-menu {
-    color: #fff;
+    color: black;
     font-size: 22px;
     position: absolute;
     top: 10px;

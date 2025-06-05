@@ -16,6 +16,7 @@ import ContactList from "./AdminDashboard/components/ContactList";
 import SubscriptionList from "./AdminDashboard/components/SubscriptionList";
 import VisitorsList from "./AdminDashboard/components/VisitorsList";
 import BrandTwo from "./components/brand/BrandTwo";
+import MobileMenu from "./components/header/MobileMenu";
 
 function App() {
   useEffect(() => {
@@ -53,6 +54,7 @@ function App() {
         <Routes>
           {/* Public Site */}
           <Route path="/*" element={<AppRouter />} />
+          <Route path="mobile-menu" element={<MobileMenu />}></Route>
 
           {/* Admin Routes */}
           <Route path="/admin-login" element={<AdminLogin />} />
@@ -64,6 +66,7 @@ function App() {
               <Route path="admin-contact" element={<ContactList />} />
               <Route path="admin-subscribe" element={<SubscriptionList />} />
               <Route path="admin-visitors" element={<VisitorsList />} />
+              
             </Route>
           </Route>
         </Routes>

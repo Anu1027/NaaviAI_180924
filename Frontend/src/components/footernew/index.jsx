@@ -67,7 +67,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="footer-col">
+            <div className="footer-col3">
               <h4 className="footer-heading">Offerings</h4>
               <ul className="footer-links">
                 <li>Product Design</li>
@@ -78,12 +78,12 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div className="footer-col">
+            <div className="footer-col1">
               <h4 className="footer-heading">Contact Us</h4>
               <p className="footer-contact">info@naavinetwork.ai</p>
             </div>
 
-            <div className="footer-col">
+            <div className="footer-col2">
               <h4 className="footer-heading">Subscribe</h4>
               <div className="footer-subscribe">
                 <input type="email" placeholder="example@gmail.com" />
@@ -97,7 +97,7 @@ const Footer = () => {
 
       <div className="footer-bottom">
         <div className="container footer-bottom-inner">
-          <div className='footer-copy'>Copyright © 2025 Onnes Ruskiv Cryogenics.</div>
+          <div className='footer-copy'>Copyright © 2025 Naavi Network.</div>
           <div className="footer-policy-links">
             <a href="/">Terms of Use</a>
             <span>|</span>

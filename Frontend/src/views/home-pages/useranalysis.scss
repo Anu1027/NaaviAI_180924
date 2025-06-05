@@ -2,10 +2,16 @@
   padding: 60px 0;
   background-color: white;
 
-  @media (max-width: 768px) {
-    padding: 60px 0;
+  @media (min-width:300px)and(max-width: 539px) {
+    padding: 10px 0;
+  }
+
+
+  @media (min-width:540px)and(max-width: 768px) {
+    padding: 150px 0;
   }
 }
+
 
 .featureIcon {
   width: 60px;

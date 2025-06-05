@@ -136,14 +136,14 @@
 
 /* Column layout override */
 .custom-col-half {
-  width: 110%;
+  width: 50%;
   padding: 110px; 
   margin-left:-40px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 760px)  and (max-width:900px){
   .custom-col-half {
-    width: 50%;
+    width: 100%;
   }
 }
 
@@ -213,3 +213,62 @@
   padding: 0;
 }
 
+
+
+
+/* ========== MOBILE RESPONSIVENESS ========== */
+@media (max-width: 760px) {
+  .custom-row,
+  .custom-row1 {
+    flex-direction: column;
+    margin-top: 60px;
+    padding-left: 16px;
+    padding-right: 16px;
+    width:100%;
+  }
+
+  .custom-col-half {
+    width: 100%;
+    padding: 20px;
+    margin-left: 0;
+  }
+
+  .form-input,
+  .form-input1,
+  .form-textarea,
+  .custom-select {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .custom-section-heading {
+    margin-left: 0;
+    font-size: 14px;
+  }
+
+  .custom-section-subtitle {
+    font-size: 16px;
+  }
+
+  .custom-section-title {
+    font-size: 28px;
+    width: 100%;
+  }
+
+  .widget-title {
+    font-size: 20px;
+  }
+
+  .contact-style1 li {
+    font-size: 16px;
+  }
+
+  .form-button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .status-message {
+    text-align: center;
+  }
+}

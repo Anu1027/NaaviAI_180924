@@ -9,6 +9,7 @@ import logos from "../../assets/images/logo/naavi_final_logo2.png";
 import "./toggler.scss"; // Add this import
 
 export default function SideTogglePanel({ isOpen, onClose }) {
+  if (!isOpen) return null;
   return (
     <>
       <div className={`side-panel ${isOpen ? "active" : ""}`}>
