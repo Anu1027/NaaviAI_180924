@@ -7,6 +7,7 @@ import 'antd/dist/reset.css';
 import dayjs from 'dayjs';
 import isSameOrAfter from 'dayjs/plugin/isSameOrAfter';
 import isSameOrBefore from 'dayjs/plugin/isSameOrBefore';
+import { useMediaQuery } from 'react-responsive';
 
 dayjs.extend(isSameOrAfter);
 dayjs.extend(isSameOrBefore);
@@ -17,6 +18,7 @@ const VisitorsList = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [startDate, setStartDate] = useState(null);
   const [endDate, setEndDate] = useState(null);
+  const isMobile = useMediaQuery({ maxWidth: 767 });
 
   const visitorsPerPage = 5;
 
@@ -33,10 +35,8 @@ const VisitorsList = () => {
     fetchVisitors();
   }, []);
 
-  // Date filtering
   useEffect(() => {
     let filtered = [...visitors];
-
     if (startDate && endDate) {
       filtered = filtered.filter(visitor => {
         const created = dayjs(visitor.createdAt);
@@ -44,7 +44,6 @@ const VisitorsList = () => {
                created.isSameOrBefore(dayjs(endDate), 'day');
       });
     }
-
     setFilteredVisitors(filtered);
     setCurrentPage(1);
   }, [startDate, endDate, visitors]);
@@ -74,22 +73,59 @@ const VisitorsList = () => {
   };
 
   return (
-    <div className="container" style={{ minHeight: '100vh', backgroundColor: '#f4f6f9', paddingTop: '30px', paddingLeft:'30px' }}>
-      <div className="d-flex justify-content-between align-items-center mb-4 flex-wrap">
-        <h1 style={{ color: 'black', fontWeight: 'bold', fontSize: '36px' }}>Visitors List</h1>
-        <Button
-          type="primary"
-          onClick={exportData}
-          style={{ backgroundColor: '#198754', borderColor: '#198754', borderRadius: '20px', padding: '8px 24px' }}
-        >
-          Export
-        </Button>
-      </div>
-
+    <div
+      className="container"
+      style={{
+        minHeight: '100vh',
+        backgroundColor: '#f4f6f9',
+        paddingTop: '30px',
+        paddingLeft: '30px',
+        paddingRight: '30px'
+      }}
+    >
+      <div
+              className="mb-4"
+              style={{
+                display: 'flex',
+                flexDirection: isMobile ? 'row' : 'row',
+                justifyContent: isMobile ? 'flex-start' : 'space-between',
+                alignItems: isMobile ? 'stretch' : 'center',
+                gap: '10px',
+                width: '100%'
+              }}
+            >
+              <h1
+                style={{
+                  color: 'black',
+                  fontWeight: 'bold',
+                  fontSize: isMobile ? '22px' : '36px',
+                  width: isMobile ? '70%' : 'auto'
+                }}
+              >
+                Visitors List
+              </h1>
+              <Button
+                type="primary"
+                onClick={exportData}
+                style={{
+                  backgroundColor: '#198754',
+                  borderColor: '#198754',
+                  borderRadius: '20px',
+                  padding: isMobile ?  '8px 20px' : '8px 24px',
+                  width: isMobile ? '30%' : 'auto',
+                  alignItems: isMobile? 'left': 'auto',
+                }}
+              >
+                Export
+              </Button>
+            </div>
+      
       {/* Filters */}
       <div className="row g-3 mb-4 mt-45">
-        <div className="col-md-3">
-          <label htmlFor="startDate" style={{ color: '#198754', fontWeight: 600 , fontSize:'1.2rem'}}>Start Date</label>
+        <div className="col-md-3 col-sm-6">
+          <label htmlFor="startDate" style={{ color: '#198754', fontWeight: 600, fontSize: '1.2rem' }}>
+            Start Date
+          </label>
           <DatePicker
             id="startDate"
             style={{ width: '100%', borderRadius: '8px' }}
@@ -98,8 +134,10 @@ const VisitorsList = () => {
             format="YYYY-MM-DD"
           />
         </div>
-        <div className="col-md-3">
-          <label htmlFor="endDate" style={{ color: '#198754', fontWeight: 600, fontSize:'1.2rem' }}>End Date</label>
+        <div className="col-md-3 col-sm-6">
+          <label htmlFor="endDate" style={{ color: '#198754', fontWeight: 600, fontSize: '1.2rem' }}>
+            End Date
+          </label>
           <DatePicker
             id="endDate"
             style={{ width: '100%', borderRadius: '8px' }}
@@ -111,19 +149,20 @@ const VisitorsList = () => {
       </div>
 
       {/* Table */}
-      <div className="card p-4 shadow-sm" style={{ borderRadius: '10px' }}>
-        <table className="table table-bordered">
-          <thead >
-            <tr>
-              <th>S.No</th>
-              <th>IP</th>
-              <th>City</th>
-              <th>Region</th>
-              <th>Postal Code</th>
-              <th>Country</th>
-              <th>Created On</th>
-            </tr>
-          </thead>
+      <div className="card p-3 shadow-sm" style={{ borderRadius: '10px'}}>
+        <div className="table-responsive">
+           <table className="table table-bordered">
+            <thead>
+              <tr>
+                <th>S.No</th>
+                <th>IP</th>
+                <th>City</th>
+                <th>Region</th>
+                <th>Postal Code</th>
+                <th>Country</th>
+                <th>Created On</th>
+              </tr>
+            </thead>
           <tbody>
             {currentVisitors.map((visitor, index) => (
               <tr key={visitor._id} style={{ backgroundColor: index % 2 === 0 ? '#f9f9f9' : '#fff' }}>
@@ -138,6 +177,7 @@ const VisitorsList = () => {
             ))}
           </tbody>
         </table>
+        </div>
       </div>
 
       {/* Pagination */}
@@ -146,7 +186,7 @@ const VisitorsList = () => {
           current={currentPage}
           total={filteredVisitors.length}
           pageSize={visitorsPerPage}
-          onChange={page => setCurrentPage(page)}
+          onChange={(page) => setCurrentPage(page)}
           showSizeChanger={false}
         />
       </div>

@@ -30,9 +30,8 @@ const HomeDashboard = () => {
 
   // Media queries for responsive design
   const isMobile = useMediaQuery({ maxWidth: 767 });
-  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1023 });
-  const isDesktop = useMediaQuery({ minWidth: 1024 });
-
+  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024 });
+  
   useEffect(() => {
     const savedCounts = localStorage.getItem("counts");
     if (savedCounts) {
@@ -127,7 +126,7 @@ const HomeDashboard = () => {
             position: 'relative',
             overflow: 'hidden',
             color: 'white',
-            minHeight: isMobile ? '120px' : '160px'
+            minHeight: isMobile ? '160px' : '160px'
           }}>
             
             {/* Large overlapping circle */}
@@ -216,17 +215,25 @@ const HomeDashboard = () => {
       </div>
 
       {/* Charts Section */}
-      <div style={{
-        display: 'grid',
-        gridTemplateColumns: isMobile ? '1fr' : 'repeat(auto-fit, minmax(400px, 1fr))',
-        gap: isMobile ? '20px' : '28px',
-        marginTop:'250px',
-      }}>
+      <div
+  style={{
+    display: 'grid',
+    gridTemplateColumns: isMobile
+      ? '1fr'
+      : isTablet
+      ? 'repeat(auto-fit, minmax(300px, 1fr))'
+      : 'repeat(auto-fit, minmax(400px, 1fr))',
+    gap: isMobile ? '48px' : isTablet ? '38px' : '28px',
+    marginTop: isMobile ? '550px' : isTablet ? '550px' : '250px',
+  }}
+
+>
+
         {/* Modern Area Chart */}
         <div style={{
           background: 'rgba(255, 255, 255, 0.3)',
           borderRadius: '14px',
-          padding: isMobile ? '16px' : '22px',
+          padding: isMobile ? '22px' : '22px',
           boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
           backdropFilter: 'blur(8px)',
           border: '1px solid rgba(255, 255, 255, 0.3)',

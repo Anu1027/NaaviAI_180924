@@ -17,8 +17,15 @@ const SubscriptionList = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [startDate, setStartDate] = useState(null);
   const [endDate, setEndDate] = useState(null);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
   const subscriptionsPerPage = 5;
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 768);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   useEffect(() => {
     const fetchSubscriptions = async () => {
@@ -33,10 +40,8 @@ const SubscriptionList = () => {
     fetchSubscriptions();
   }, []);
 
-  // Updated date filter logic to include same day
   useEffect(() => {
     let filtered = [...subscriptions];
-
     if (startDate && endDate) {
       filtered = filtered.filter(subscription => {
         const created = dayjs(subscription.createdAt);
@@ -44,7 +49,6 @@ const SubscriptionList = () => {
                created.isSameOrBefore(dayjs(endDate), 'day');
       });
     }
-
     setFilteredSubscriptions(filtered);
     setCurrentPage(1);
   }, [startDate, endDate, subscriptions]);
@@ -70,22 +74,58 @@ const SubscriptionList = () => {
   };
 
   return (
-    <div className="container" style={{ minHeight: '100vh', backgroundColor: '#f4f6f9', paddingTop: '30px', paddingLeft:'30px' }}>
-      <div className="d-flex justify-content-between align-items-center mb-4 flex-wrap">
-        <h1 style={{ color: 'black', fontWeight: 'bold', fontSize: '36px' }}>Subscribed Emails</h1>
+    <div
+      className="container"
+      style={{
+        minHeight: '100vh',
+        backgroundColor: '#f4f6f9',
+        paddingTop: '30px',
+        paddingLeft: isMobile ? '16px' : '30px',
+        paddingRight: isMobile ? '16px' : '30px'
+      }}
+    >
+      {/* Header and Export Button */}
+      <div
+        className="mb-4"
+        style={{
+          display: 'flex',
+          flexDirection: isMobile ? 'row' : 'row',
+          justifyContent: isMobile ? 'flex-start' : 'space-between',
+          alignItems: isMobile ? 'stretch' : 'center',
+          gap: '10px',
+          width: '100%'
+        }}
+      >
+        <h1
+          style={{
+            color: 'black',
+            fontWeight: 'bold',
+            fontSize: isMobile ? '22px' : '36px',
+            width: isMobile ? '70%' : 'auto'
+          }}
+        >
+          Subscribed Emails
+        </h1>
         <Button
           type="primary"
           onClick={exportData}
-          style={{ backgroundColor: '#198754', borderColor: '#198754', borderRadius: '20px', padding: '8px 24px' }}
+          style={{
+            backgroundColor: '#198754',
+            borderColor: '#198754',
+            borderRadius: '20px',
+            padding: isMobile ?  '8px 20px' : '8px 24px',
+            width: isMobile ? '30%' : 'auto',
+            alignItems: isMobile? 'left': 'auto',
+          }}
         >
           Export
         </Button>
       </div>
 
-      {/* Filters */}
-      <div className="row g-3 mb-4 mt-45">
-        <div className="col-md-3">
-          <label htmlFor="startDate" style={{ color: '#198754', fontWeight: 600, fontSize:'1.2rem' }}>Start Date</label>
+      {/* Date Filters */}
+      <div className="row g-3 mb-4">
+        <div className="col-md-3 col-sm-6">
+          <label htmlFor="startDate" style={{ color: '#198754', fontWeight: 600, fontSize: '1.2rem' }}>Start Date</label>
           <DatePicker
             id="startDate"
             style={{ width: '100%', borderRadius: '8px' }}
@@ -94,8 +134,8 @@ const SubscriptionList = () => {
             format="YYYY-MM-DD"
           />
         </div>
-        <div className="col-md-3">
-          <label htmlFor="endDate" style={{ color: '#198754', fontWeight: 600, fontSize:'1.2rem' }}>End Date</label>
+        <div className="col-md-3 col-sm-6">
+          <label htmlFor="endDate" style={{ color: '#198754', fontWeight: 600, fontSize: '1.2rem' }}>End Date</label>
           <DatePicker
             id="endDate"
             style={{ width: '100%', borderRadius: '8px' }}
@@ -109,7 +149,7 @@ const SubscriptionList = () => {
       {/* Table */}
       <div className="card p-4 shadow-sm" style={{ borderRadius: '10px' }}>
         <table className="table table-bordered">
-          <thead >
+          <thead>
             <tr>
               <th>S.No</th>
               <th>Email</th>
